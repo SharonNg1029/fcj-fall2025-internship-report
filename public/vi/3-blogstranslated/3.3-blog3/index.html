@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/fcj-fall2025-internship-report/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=fcj-fall2025-internship-report/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="ngannnkse182088@fpt.edu.vn" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 3 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1764858849" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1764858849" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1764858849" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1764858849" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1764858849" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1764858849" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1764858849" rel="stylesheet">
+    <link href="../../../css/theme.css?1764858849" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1764858849" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1764858849" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1764858849"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.3-blog3/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+  
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1764858849"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1764858849"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/fcj-fall2025-internship-report\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1764858849"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    
+    <div style="display:none" id="debug-sections">
+      Total sections: 7
+      
+        | Nhật ký công việc (1)
+      
+        | Bản đề xuất (2)
+      
+        | Các bài blogs đã dịch (3)
+      
+        | Các events đã tham gia (4)
+      
+        | Workshop (5)
+      
+        | Tự đánh giá (6)
+      
+        | Chia sẻ, đóng góp ý kiến (7)
+      
+    </div>
+    
+    <ul class="topics">
+              
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+    <b>1.</b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12. </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item
+        parent
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item
+        
+        active
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Sự kiện 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+    <b> 4.1. </b>Sự kiện 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Sự kiện 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+    <b> 4.2. </b>Sự kiện 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Sự kiện 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event3/">
+    <b> 4.3. </b>Sự kiện 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.4-event4/"
+  title="Sự kiện 4"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.4-event4/">
+    <b> 4.4. </b>Sự kiện 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.5-event5/"
+  title="Sự kiện 5"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.5-event5/">
+    <b> 4.5. </b>Sự kiện 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/"
+  title="Truy cập S3 từ VPC"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/">
+     <b> 5.3. </b> Truy cập S3 từ VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title="Tạo một Gateway Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     <b> 5.3.1 </b> Tạo một Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title="Kiểm tra Gateway Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     <b> 5.3.2 </b> Kiểm tra Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/"
+  title="Truy cập S3 từ môi trường truyền thống"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/">
+     <b> 5.4. </b> Truy cập S3 từ môi trường truyền thống 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title="Chuẩn bị tài nguyên"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     <b> 5.4.1 </b> Chuẩn bị tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title="Tạo một S3 Interface endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     <b> 5.4.2 </b> Tạo một S3 Interface endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title="Kiểm tra Interface Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     <b> 5.4.3 </b> Kiểm tra Interface Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title="Mô phỏng On-premises DNS "
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     <b> 5.4.4 </b> Mô phỏng On-premises DNS  
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.5-policy/"
+  title="VPC Endpoint Policies"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-policy/">
+     <b> 5.5 </b> VPC Endpoint Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/fcj-fall2025-internship-report/3-blogstranslated/3.3-blog3/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/fcj-fall2025-internship-report/vi/3-blogstranslated/3.3-blog3/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#bắt-đầu">Bắt đầu</a>
+      <ul>
+        <li><a href="#pattern-based-routing">Pattern-based Routing</a></li>
+        <li><a href="#xử-lý-đăng-ký">Xử lý đăng ký</a></li>
+        <li><a href="#truy-cập-toàn-bộ-event-và-context">Truy cập toàn bộ event và context</a></li>
+        <li><a href="#xử-lý-lỗi">Xử lý lỗi</a></li>
+      </ul>
+    </li>
+    <li><a href="#các-mẫu-nâng-cao-và-những-ví-dụ-thực-tiễn-tốt-nhất">Các mẫu nâng cao và những ví dụ thực tiễn tốt nhất</a>
+      <ul>
+        <li><a href="#xử-lý-khi-publish">Xử lý khi publish</a></li>
+        <li><a href="#xử-lý-gộp">Xử lý gộp</a></li>
+        <li><a href="#bộ-lọc-sự-kiện">Bộ lọc sự kiện</a></li>
+      </ul>
+    </li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 3
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="đơn-giản-hóa-việc-tích-hợp-aws-appsync-events-với-powertools-for-aws-lambda">Đơn giản hóa việc tích hợp AWS AppSync Events với Powertools for AWS Lambda</h1>
+<blockquote>
+<p>Tác giả: Ana Falcao và Leandro Cavalcante Damascena | ngày 14 tháng 5 năm 2025 | <a href="https://aws.amazon.com/blogs/mobile/category/mobile-services/aws-appsync/">AWS AppSync</a>, <a href="https://aws.amazon.com/blogs/mobile/category/compute/aws-lambda/">AWS Lambda</a>, <a href="https://aws.amazon.com/blogs/mobile/category/developer-tools/">Developer Tools</a>, <a href="https://aws.amazon.com/blogs/mobile/category/post-types/technical-how-to/">Hướng dẫn kỹ thuật</a> | <a href="https://aws.amazon.com/blogs/mobile/simplify-aws-appsync-events-integration-with-powertools-for-aws-lambda/">Link cố định</a> | <a href="https://aws.amazon.com/vi/blogs/mobile/simplify-aws-appsync-events-integration-with-powertools-for-aws-lambda/?fbclid=IwY2xjawNNLSdleHRuA2FlbQIxMABicmlkETFaSWRiTGFjUFVlemt0TURTAR5NZ_uttOfpoh-gyfNYi3YAyK8gskVcGVgwO1ZoanVHCVuQNrI9rrAHDenHrw_aem_NIqTzK504NOf04BvE3OUvA">Chia sẻ</a></p></blockquote>
+<p>Các ứng dụng real-time đã trở thành yếu tố thiết yếu trong các ứng dụng hiện đại, nơi người dùng mong đợi được cập nhật ngay lập tức và có trải nghiệm tương tác. Dù bạn đang xây dựng ứng dụng chat, bảng điều khiển trực tiếp, bảng xếp hạng trò chơi, hay hệ thống IoT, <a href="https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-welcome.html">AWS AppSync Events</a> cho phép triển khai các tính năng real-time này thông qua WebSocket APIs, giúp bạn xây dựng các ứng dụng real-time có khả năng mở rộng và hiệu năng cao mà không phải lo lắng về việc mở rộng hay quản lý kết nối.</p>
+<p><a href="https://powertools.aws.dev/">Powertools for AWS Lambda</a> là một bộ công cụ dành cho developer, bao gồm các tính năng như quan sát xử lý batch, tích hợp với thước đo hệ thống <a href="https://aws.amazon.com/systems-manager/">AWS Systems Manager Store</a> mang tính bất biến, gắn cờ tính năng, <a href="https://aws.amazon.com/cloudwatch/">Amazon CloudWatch</a> hỗ trợ ghi nhật ký có cấu trúc. Hơn thế nữa giờ đây Powertools for AWS đã hỗ trợ AppSync Events thông qua tính năng mới <code>AppSyncEventsResolver</code>, khả dụng cho Python, TypeScript, và .NET. Tính năng mới này nâng cao trải nghiệm phát triển với những khả năng được thiết kế để giúp bạn tập trung vào business logic. <code>AppSyncEventsResolver</code> cung cấp một giao diện đơn giản và nhất quán để xử lý sự kiện, với hỗ trợ tích hợp sẵn cho các pattern phổ biến như lọc, chuyển đổi và định tuyến sự kiện.</p>
+<p>Trong bài viết này, bạn sẽ thấy các ví dụ bằng <a href="https://docs.powertools.aws.dev/lambda/typescript/latest/">TypeScript</a>, nhưng bạn cũng có thể sử dụng cùng chức năng trong các hàm Python và .NET với <a href="https://docs.powertools.aws.dev/lambda/python/latest/">Powertools for AWS (Python)</a> và <a href="https://docs.powertools.aws.dev/lambda/dotnet/">Powertools for AWS (.NET)</a>.</p>
+<p><img src="../../../images/3-Translated-Blogs/Blog3_1.png" alt="Real-time event handling architecture using AWS AppSync, Lambda, and Powertools"></p>
+<center> <i>Hình 1 – Kiến trúc xử lý sự kiện real-time sử dụng AWS AppSync, Lambda, và Powertools.</i></center>
+<p>Trong bài viết này, bạn sẽ học cách:</p>
+<ul>
+<li>Thiết lập event handlers bằng <code>AppSyncEventsResolver</code></li>
+<li>Triển khai các mẫu xử lý sự kiện khác nhau để đạt hiệu năng tối ưu</li>
+<li>Sử dụng pattern-based routing để tổ chức các event handlers</li>
+<li>Tận dụng các tính năng tích hợp sẵn cho những use case phổ biến</li>
+</ul>
+<h2 id="bắt-đầu">Bắt đầu</h2>
+<p><code>AppSyncEventsResolver</code> cung cấp một cách tiếp cận đơn giản và khai báo (declarative) để xử lý AppSync Events trong các hàm <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>. Event resolver ho phép bạn lắng nghe hai loại sự kiện <code>PUBLISH</code> và <code>SUBSCRIBE</code>. <code>PUBLISH</code> events xảy ra khi các client gửi tin nhắn đến một channel, trong khi <code>SUBSCRIBE</code> xảy ra khi các client cố gắng đăng ký vào một channel. Bạn có thể đăng ký các handler cho những namespace và channel khác nhau để quản lý luồng giao tiếp theo hướng sự kiện.</p>
+<p>Hãy cùng tìm hiểu cách bắt đầu và các tính năng cốt lõi sẽ nâng cao trải nghiệm phát triển của bạn. Đây là một ví dụ cơ bản về cách thiết lập <code>AppSyncEventsResolver</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">AppSyncEventsResolver</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">UnauthorizedException</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Types for our message handling
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ChatMessage</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">userId</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">content</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Simple authorization check
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isAuthorized</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">path</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">userId?</span>: <span style="color:#66d9ef">string</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span> <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// check against your authorization system
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#39;/chat/private&#39;</span>) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">userId</span>) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Message processing logic
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">processMessage</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>: <span style="color:#66d9ef">ChatMessage</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// - Validate message content
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// - Store in database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// - Enrich with additional data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...<span style="color:#a6e22e">payload</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">timestamp</span>: <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">toISOString</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Handle publish events for a specific channel
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/chat/general&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>: <span style="color:#66d9ef">ChatMessage</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Process and return the message
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">processMessage</span>(<span style="color:#a6e22e">payload</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Handle subscription events for all channels
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onSubscribe</span>(<span style="color:#e6db74">&#39;/\*&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">info</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">channel</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">path</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">request</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>} <span style="color:#f92672">=</span> <span style="color:#a6e22e">info</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Perform access control checks
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isAuthorized</span>(<span style="color:#a6e22e">path</span>, <span style="color:#a6e22e">userId</span>)) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">UnauthorizedException</span>(<span style="color:#e6db74">`not allowed to subscribe to </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">path</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span></code></pre></div><p>Lớp <code>AppSyncEventsResolver</code> đảm nhận việc phân tích dữ liệu sự kiện nhận vào và gọi đến phương thức handler phù hợp dựa trên loại sự kiện. Hãy cùng phân tích chi tiết:</p>
+<h3 id="pattern-based-routing">Pattern-based Routing</h3>
+<p><code>AppSyncEventsResolver</code> sử dụng một hệ thống định tuyến dựa trên mẫu (pattern-based routing) trực quan, cho phép bạn tổ chức các event handler dựa trên đường dẫn channel. Bạn có thể:</p>
+<ul>
+<li>Xử lý các channel cụ thể (/chat/general)</li>
+<li>Sử dụng ký tự đại diện (wildcards) cho namespaces (/chat/*)</li>
+<li>Tạo các handler tổng quát bắt tất cả (catch-all) (/*)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Specific channel handler
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/notifications/alerts&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// your logic here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Handle all channels in the notifications namespace
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/notifications/\*&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// your logic here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Global catch-all for unhandled channels
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/\*&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// your logic here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span></code></pre></div><p>Handler tổng quát nhất (catch-all) là <code>/*</code>,nó sẽ khớp với mọi namespace và channel, trong khi <code>/default/*</code> sẽ khớp với bất kỳ channel nào trong namespace default. Khi có nhiều handler cùng khớp với một sự kiện, thư viện sẽ gọi handler cụ thể nhất và bỏ qua các handler ít cụ thể hơn. Ví dụ: nếu một handler được đăng ký cho <code>/default/channel1</code> và một handler khác cho <code>/default/\*</code>, thì Powertools sẽ gọi handler đầu tiên cho các sự kiện khớp với <code>/default/channel1</code> và bỏ qua handler thứ hai. Điều này giúp bạn kiểm soát cách các sự kiện được xử lý và tránh việc xử lý thừa. Nếu có sự kiện không khớp với bất kỳ handler nào, theo mặc định Powertools sẽ trả về sự kiện đó như nguyên bản và ghi log một cảnh báo. Điều này có nghĩa là sự kiện sẽ được truyền qua mà không có bất kỳ chỉnh sửa nào. Cách tiếp cận này hữu ích khi bạn muốn áp dụng thư viện một cách dần dần: xử lý những sự kiện cụ thể bằng logic tùy chỉnh, trong khi các sự kiện khác được xử lý bằng hành vi mặc định.</p>
+<h3 id="xử-lý-đăng-ký">Xử lý đăng ký</h3>
+<p>Powertools cũng cung cấp một cách đơn giản để xử lý các events đăng ký. Thư viện sẽ tự động phân tích sự kiện nhận vào và gọi đến handler phù hợp dựa trên loại sự kiện. Theo mặc định, AppSync sẽ cho phép đăng ký, trừ khi Lambda handler của bạn ném ra lỗi hoặc từ chối yêu cầu một cách rõ ràng. Khi một đăng ký bị từ chối, AppSync sẽ trả về phản hồi 4xx cho client và ngăn không cho đăng ký được thiết lập.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Metrics</span>, <span style="color:#a6e22e">MetricUnit</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/metrics&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#66d9ef">type</span> { <span style="color:#a6e22e">Context</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;aws-lambda&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">metrics</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Metrics</span>({
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;serverlessAirline&#39;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">serviceName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;chat&#39;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleMetric</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onSubscribe</span>(<span style="color:#e6db74">&#39;/default/foo&#39;</span>, (<span style="color:#a6e22e">event</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">metrics</span>.<span style="color:#a6e22e">addDimension</span>(<span style="color:#e6db74">&#39;channel&#39;</span>, <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">channel</span>.<span style="color:#a6e22e">path</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">metrics</span>.<span style="color:#a6e22e">addMetric</span>(<span style="color:#e6db74">&#39;connections&#39;</span>, <span style="color:#a6e22e">MetricUnit</span>.<span style="color:#a6e22e">Count</span>, <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>: <span style="color:#66d9ef">unknown</span>, <span style="color:#a6e22e">context</span>: <span style="color:#66d9ef">Context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span></code></pre></div><p>Thư viện sẽ gọi đến handler phù hợp và truyền đối tượng sự kiện làm đối số đầu tiên khi một subscription event đến. Bạn có thể thực hiện bất kỳ hành động cần thiết nào dựa trên subscription event, chẳng hạn như chạy các kiểm tra quyền truy cập:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onSubscribe</span>(<span style="color:#e6db74">&#39;/private/\*&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">info</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userGroups</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">identity</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">groups</span> <span style="color:#f92672">&amp;&amp;</span> Array.<span style="color:#a6e22e">isArray</span>(<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">identity</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">groups</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">?</span> <span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">identity</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">groups</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">:</span> [];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">channelGroup</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;premium-users&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">userGroups</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">channelGroup</span>)) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">UnauthorizedException</span>(
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">`Subscription requires </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">channelGroup</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> group membership`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>Các sự kiện đăng ký có cùng một quy tắc phù hợp và cung cấp quyền truy cập tương tự vào toàn bộ sự kiện và bối cảnh. Bạn có thể đăng ký các trình xử lý bắt tất cả cho bất kỳ không gian tên hoặc kênh nào bằng cách sử dụng ký tự đại diện <code>*</code>, đồng thời vẫn có thể truy cập đầy đủ các sự kiện và bối cảnh đối tượng trong trình xử lý của mình.</p>
+<h3 id="truy-cập-toàn-bộ-event-và-context">Truy cập toàn bộ event và context</h3>
+<p>Mặc dù resolver đơn giản hóa việc xử lý sự kiện, bạn vẫn có toàn quyền truy cập vào các đối tượng event và context khi cần. Điều này rất hữu ích trong các tình huống bạn cần thêm thông tin, chẳng hạn như request headers hoặc thời gian thực thi còn lại từ Lambda context, để triển khai logic tùy chỉnh.</p>
+<p>Resolver truyền toàn bộ event và context đến mỗi handler dưới dạng đối số thứ hai và thứ ba. Điều này cho phép bạn truy cập tất cả thông tin liên quan mà không cần thay đổi code hiện có.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Logger</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/logger&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Logger</span>({
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">logLeveL</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;INFO&#39;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">serviceName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;serverlessAirline&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>({ <span style="color:#a6e22e">logger</span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/orders/process&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>, <span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Access request headers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">headers</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Access Lambda context
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">getRemainingTimeInMillis</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">context</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#39;Processing event details&#39;</span>, {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">headers</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">remainingTime</span>: <span style="color:#66d9ef">getRemainingTimeInMillis</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">payload</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);<span style="color:#f92672">:</span>
+</span></span></code></pre></div><h3 id="xử-lý-lỗi">Xử lý lỗi</h3>
+<p><code>AppSyncEventsResolver</code> cung cấp cơ chế xử lý lỗi tích hợp sẵn, giúp ngăn chặn việc hàm Lambda bị thất bại toàn bộ đồng thời vẫn đảm bảo lỗi được truyền đạt đúng cách đến AppSync, sau đó được chuyển tiếp đến client. Khi xảy ra lỗi trong handler, thay vì khiến toàn bộ Lambda invocation thất bại, resolver sẽ bắt lỗi và đưa nó vào response payload của sự kiện cụ thể bị lỗi.</p>
+<p>Cách tiếp cận này đảm bảo hàm Lambda vẫn tiếp tục thực thi, trong khi vẫn gửi các thông báo lỗi được định dạng chuẩn đến AppSync. Khi xử lý nhiều sự kiện cùng lúc, nếu một sự kiện thất bại thì các sự kiện khác vẫn tiếp tục được xử lý bình thường. Điều này đặc biệt hữu ích trong các kịch bản xử lý song song, nơi bạn muốn đảm bảo rằng lỗi ở một sự kiện sẽ không ảnh hưởng đến việc xử lý các sự kiện khác.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/messages&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// If message contains &#34;error&#34;, throw an exception
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">message</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;error&#34;</span>) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#34;Invalid message&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">payload</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// When processing this event:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;id&#34;: &#34;123&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;payload&#34;: {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;message&#34;: &#34;error&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// The resolver will return:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;id&#34;: &#34;123&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;error&#34;: &#34;Error - Invalid message&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// }
+</span></span></span></code></pre></div><h2 id="các-mẫu-nâng-cao-và-những-ví-dụ-thực-tiễn-tốt-nhất">Các mẫu nâng cao và những ví dụ thực tiễn tốt nhất</h2>
+<p><code>AppSyncEventsResolver</code> có thêm các tính năng nâng cao giúp bạn xây dựng các ứng dụng real-time mạnh mẽ và dễ bảo trì. Hãy cùng tìm hiểu những khả năng này và cách sử dụng chúng một cách hiệu quả.</p>
+<h3 id="xử-lý-khi-publish">Xử lý khi publish</h3>
+<p>Theo mặc định, route handler của bạn sẽ được gọi một lần cho mỗi message. Điều này cho phép bạn tập trung vào business logic và tránh phải viết nhiều đoạn code lặp lại, trong khi Powertools sẽ xử lý việc lặp qua các message và chuyển đổi định dạng event cũng như response. Bạn chỉ cần trả về giá trị mà bạn muốn sử dụng làm payload, hoặc ném ra lỗi cho message đó. Thư viện sau đó sẽ ánh xạ payload với đúng event id tương ứng.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Metrics</span>, <span style="color:#a6e22e">MetricUnit</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/metrics&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">SensorReading</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">deviceId</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">temperature</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">humidity</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">timestamp</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">metrics</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Metrics</span>({ <span style="color:#66d9ef">namespace</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;SensorReadings&#39;</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/sensors/readings&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>: <span style="color:#66d9ef">SensorReading</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Process each sensor reading independently
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">temperature</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100</span>) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">metrics</span>.<span style="color:#a6e22e">addDimension</span>(<span style="color:#e6db74">&#39;alertType&#39;</span>, <span style="color:#e6db74">&#39;highTemperature&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">metrics</span>.<span style="color:#a6e22e">addMetric</span>(<span style="color:#e6db74">&#39;HighTemperature&#39;</span>, <span style="color:#a6e22e">MetricUnit</span>.<span style="color:#a6e22e">Count</span>, <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Temperature reading too high&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Enrich the payload with processing timestamp
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...<span style="color:#a6e22e">payload</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">processed</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">processedAt</span>: <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">toISOString</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span></code></pre></div><p>Mẫu này giúp đơn giản hóa việc phát triển bằng cách cho phép bạn chỉ cần viết logic cho một sự kiện duy nhất, còn Powertools sẽ tự động xử lý mọi phần còn lại.</p>
+<h3 id="xử-lý-gộp">Xử lý gộp</h3>
+<p>Chế độ aggregate cho phép bạn xử lý nhiều sự kiện như một batch duy nhất, thay vì xử lý chúng riêng lẻ. Điều này đặc biệt hữu ích khi bạn muốn tối ưu việc sử dụng tài nguyên, chẳng hạn như gửi nhiều truy vấn đến cơ sở dữ liệu trong một lần thao tác, hoặc phân tích nhiều sự kiện cùng nhau trước khi xử lý. Mặc dù cả hai chế độ đều cho bạn toàn quyền kiểm soát quá trình xử lý sự kiện, nhưng chế độ aggregate cung cấp khả năng truy cập toàn bộ danh sách sự kiện cùng một lúc.</p>
+<p>Để thực hiện điều này, bạn có thể đặt tùy chọn <code>aggregate</code> đến <code>true</code>. Khi sử dụng chế độ này, resolver sẽ gửi toàn bộ danh sách sự kiện đến handler của bạn chỉ trong một lần gọi, cho phép bạn xử lý chúng như một batch.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppSyncEventsResolver</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/default/*&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">events</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">results</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">event</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">events</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">handleDefaultNamespaceCatchAll</span>(<span style="color:#a6e22e">event</span>));
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">results</span>.<span style="color:#a6e22e">push</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">errorType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Error&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">message</span>: <span style="color:#66d9ef">error.message</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">event.id</span>,
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">results</span>;
+</span></span><span style="display:flex;"><span>}, {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">aggregate</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span></code></pre></div><p>Lưu ý rằng tùy chọn <code>aggregate</code> chỉ khả dụng cho publish events, và khi sử dụng tùy chọn này, bạn sẽ chịu trách nhiệm xử lý các sự kiện cũng như trả về phản hồi phù hợp. Powertools vẫn sẽ đảm nhận việc định tuyến các sự kiện đến đúng handler, nhưng bạn có toàn quyền kiểm soát cách các sự kiện được xử lý.</p>
+<h3 id="bộ-lọc-sự-kiện">Bộ lọc sự kiện</h3>
+<p>Để lọc bỏ một sự kiện, bạn có thể ném ra một lỗi trong channel handler. Nếu một handler ném lỗi cho một sự kiện cụ thể, thư viện sẽ bắt lỗi đó và thêm một đối tượng lỗi vào danh sách phản hồi tại cùng chỉ số. Điều này báo hiệu rằng tin nhắn tương ứng sẽ bị loại bỏ. Cách tiếp cận này cho phép bạn hoặc là lặng lẽ lọc sự kiện, hoặc cung cấp phản hồi lỗi có ý nghĩa cho các người đăng ký của bạn.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-TypeScript" data-lang="TypeScript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppSyncEventsResolver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@aws-lambda-powertools/event-handler/appsync-events&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">onPublish</span>(<span style="color:#e6db74">&#39;/moderation/\*&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">payload</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Filter out inappropriate content
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">await</span> <span style="color:#a6e22e">containsInappropriateContent</span>(<span style="color:#a6e22e">payload</span>)) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">CustomError</span>(<span style="color:#e6db74">&#39;Content violates guidelines&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Process valid content
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">processContent</span>(<span style="color:#a6e22e">payload</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>) <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>);
+</span></span></code></pre></div><h2 id="kết-luận">Kết luận</h2>
+<p><code>AppSyncEventsResolver</code> trong Powertools for AWS nâng cao trải nghiệm phát triển với AppSync Events bằng cách cung cấp một giao diện đơn giản và nhất quán để xử lý các sự kiện real-time. Bằng cách giảm thiểu bản soạn sẵn code và cung cấp sẵn hỗ trợ cho các mẫu phổ biến, bạn có thể tập trung vào business logic thay vì phải lo về code hạ tầng.</p>
+<p>Đọc thêm:</p>
+<ul>
+<li>Khám phá <a href="https://docs.powertools.aws.dev/lambda/typescript/latest/">Powertools for AWS documentation</a> để biết thêm thông tin.</li>
+<li>Ghé qua <a href="https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-welcome.html">AppSync Events documentation</a> để biết thêm về dịch vụ.</li>
+<li>Ghé thăm <a href="https://github.com/aws-powertools">GitHub repository</a> để tiếp tục thảo luận vấn đề.</li>
+</ul>
+<p>Chúng tôi rất mong chờ được thấy những gì bạn sẽ xây dựng với các khả năng mới này. Hãy chia sẻ phản hồi của bạn và cho chúng tôi biết cách bạn đang sử dụng <code>AppSyncEventsResolver</code> trong các ứng dụng của mình!</p>
+<p>TAGS: <a href="https://aws.amazon.com/blogs/mobile/tag/appsync/">AppSync</a>, <a href="https://aws.amazon.com/blogs/mobile/tag/aws-lambda/">AWS Lambda</a></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.2-blog2/" title="Blog 2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/4-eventparticipated/" title="Các events đã tham gia" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1764858849"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1764858849"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1764858849"></script>
+    <script src="../../../js/jquery.sticky.js?1764858849"></script>
+    <script src="../../../js/featherlight.min.js?1764858849"></script>
+    <script src="../../../js/highlight.pack.js?1764858849"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1764858849"></script>
+    <script src="../../../js/learn.js?1764858849"></script>
+    <script src="../../../js/hugo-learn.js?1764858849"></script>
+
+    <link href="../../../mermaid/mermaid.css?1764858849" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1764858849"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

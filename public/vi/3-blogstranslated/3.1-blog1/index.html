@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/fcj-fall2025-internship-report/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=fcj-fall2025-internship-report/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="ngannnkse182088@fpt.edu.vn" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 1 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1764858849" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1764858849" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1764858849" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1764858849" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1764858849" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1764858849" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1764858849" rel="stylesheet">
+    <link href="../../../css/theme.css?1764858849" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1764858849" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1764858849" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1764858849"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.1-blog1/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+  
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1764858849"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1764858849"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/fcj-fall2025-internship-report\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1764858849"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    
+    <div style="display:none" id="debug-sections">
+      Total sections: 7
+      
+        | Nhật ký công việc (1)
+      
+        | Bản đề xuất (2)
+      
+        | Các bài blogs đã dịch (3)
+      
+        | Các events đã tham gia (4)
+      
+        | Workshop (5)
+      
+        | Tự đánh giá (6)
+      
+        | Chia sẻ, đóng góp ý kiến (7)
+      
+    </div>
+    
+    <ul class="topics">
+              
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+    <b>1.</b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12. </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item
+        parent
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item
+        
+        active
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Sự kiện 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+    <b> 4.1. </b>Sự kiện 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Sự kiện 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+    <b> 4.2. </b>Sự kiện 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Sự kiện 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event3/">
+    <b> 4.3. </b>Sự kiện 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.4-event4/"
+  title="Sự kiện 4"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.4-event4/">
+    <b> 4.4. </b>Sự kiện 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/4-eventparticipated/4.5-event5/"
+  title="Sự kiện 5"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.5-event5/">
+    <b> 4.5. </b>Sự kiện 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/"
+  title="Truy cập S3 từ VPC"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/">
+     <b> 5.3. </b> Truy cập S3 từ VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title="Tạo một Gateway Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     <b> 5.3.1 </b> Tạo một Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title="Kiểm tra Gateway Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     <b> 5.3.2 </b> Kiểm tra Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/"
+  title="Truy cập S3 từ môi trường truyền thống"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/">
+     <b> 5.4. </b> Truy cập S3 từ môi trường truyền thống 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title="Chuẩn bị tài nguyên"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     <b> 5.4.1 </b> Chuẩn bị tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title="Tạo một S3 Interface endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     <b> 5.4.2 </b> Tạo một S3 Interface endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title="Kiểm tra Interface Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     <b> 5.4.3 </b> Kiểm tra Interface Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title="Mô phỏng On-premises DNS "
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     <b> 5.4.4 </b> Mô phỏng On-premises DNS  
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.5-policy/"
+  title="VPC Endpoint Policies"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-policy/">
+     <b> 5.5 </b> VPC Endpoint Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/fcj-fall2025-internship-report/3-blogstranslated/3.1-blog1/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/fcj-fall2025-internship-report/vi/3-blogstranslated/3.1-blog1/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 1
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hành-trình-của-chúng-tôi-trong-việc-xây-dựng-ai-agents">Hành trình của chúng tôi trong việc xây dựng AI agents</a></li>
+    <li><a href="#các-khái-niệm-cốt-lõi-của-strands-agents">Các khái niệm cốt lõi của Strands Agents</a></li>
+    <li><a href="#bắt-đầu-với-strands-agents">Bắt đầu với Strands Agents</a></li>
+    <li><a href="#triển-khai-sản-phẩm-strands-agents">Triển khai sản phẩm Strands Agents</a></li>
+    <li><a href="#tham-gia-cộng-đồng-strands-agents">Tham gia cộng đồng Strands Agents</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 1
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="giới-thiệu-strands-agents-mã-nguồn-mở-của-ai-agents-sdk">Giới thiệu Strands Agents, mã nguồn mở của AI Agents SDK</h1>
+<blockquote>
+<p>Tác giả: Clare Liguori | ngày 16 tháng 5 năm 2025 | trong mục <a href="https://aws.amazon.com/blogs/opensource/category/post-types/announcements/">Thông báo</a>, <a href="https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/">Trí tuệ nhân tạo</a>, <a href="https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/generative-ai/">AI tạo sinh</a>, <a href="https://aws.amazon.com/blogs/opensource/category/open-source/">Mã nguồn mở</a> | <a href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/">Liên kết cố định</a> | <a href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/#Comments">Bình luận</a> | <a href="https://aws.amazon.com/vi/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/">Chia sẻ</a></p></blockquote>
+<p>Hôm nay, tôi rất vui mừng thông báo rằng chúng tôi cho ra mắt <a href="https://strandsagents.com/">Strands Agents</a>. Strands Agents là một mã nguồn mở SDK áp dụng cách tiếp cận model-driven để xây dựng và vận hành AI agents chỉ với vài dòng code. Strands có khả năng mở rộng từ những use case đơn giản đến phức tạp, từ phát triển cục bộ đến triển khai trong môi trường sản phẩm. Nhiều team tại AWS đã sử dụng Strands cho AI agents trong sản phẩm của họ, bao gồm Amazon Q Developer, AWS Glue, và VPC Reachability Analyzer. Giờ đây, tôi cực kì hồi hộp khi chia sẻ Strands với bạn để tạo nên AI agents của riêng mình.</p>
+<p>So với các frameworks yêu cầu lập trình viên phải định nghĩa lại quy trình làm việc phức tạp cho AI của họ, Strands đơn giản hóa việc phát triển AI bằng cách tận dụng khả năng của các mô hình hiện đại để lên kế hoạch, định hình suy nghĩ, sử dụng công cụ và lời phản ánh. Với Strands, lập trình viên chỉ cần định nghĩa một câu lệnh và một danh sách công cụ trong code để xây dựng agent, sau đó có thể test cục bộ và triển khai lên cloud. Giống như hai sợi DNA, Strands kết nối hai thành phần cốt lõi của AIt: mô hình và công cụ. Strands lên kế hoạch cho các bước tiếp theo của AI agents và thực thi chức năng công cụ nhờ vào khả năng lý luận nâng cao của mô hình ngôn ngữ. Đối với các trường hợp AI agent phức tạp hơn, lập trình viên có thể tùy chỉnh hành vi của AI agent trong Strands. Ví dụ, bạn có thể chỉ định cách công cụ được chọn, tùy chỉnh cách quản lý bối cảnh, chọn nơi lưu trữ trạng thái và bộ nhớ, cũng như xây dựng các ứng dụng đa tác vụ. Strands có thể chạy ở bất kỳ đâu và hỗ trợ mọi mô hình có khả năng lý luận và sử dụng công cụ, bao gồm các mô hình trong Amazon Bedrock, Anthropic, Ollama, Meta, và các nhà cung cấp khác thông qua LiteLLM.</p>
+<p>Strands Agents là một cộng đồng mở, và chúng tôi rất háo hức khi có nhiều công ty tham gia cùng với sự hỗ trợ và đóng góp, bao gồm Accenture, Anthropic, Langfuse, mem0.ai, Meta, PwC, Ragas.io và Tavily. Ví dụ, Anthropic đã đóng góp vào Strands bằng cách bổ sung hỗ trợ sử dụng models thông qua Anthropic API, và Meta đã đóng góp hỗ trợ cho các Llama models thông qua Llama API. Hãy tham gia cùng chúng tôi trên <a href="https://github.com/strands-agents">GitHub</a> để bắt đầu với Strands Agents!</p>
+<h2 id="hành-trình-của-chúng-tôi-trong-việc-xây-dựng-ai-agents">Hành trình của chúng tôi trong việc xây dựng AI agents</h2>
+<p>Tôi chủ yếu làm việc với <a href="https://aws.amazon.com/q/developer/">Amazon Q Developer</a>, một trợ lý được hỗ trợ bởi generative AI dành cho phát triển phần mềm. Nhóm của tôi và tôi bắt đầu xây dựng AI agents vào đầu năm 2023, khoảng thời gian khi bài báo khoa học gốc về <a href="https://arxiv.org/pdf/2210.03629">ReAct (Reasoning and Acting)</a> được công bố. Bài báo này cho thấy rằng các large language models có thể suy luận, lập kế hoạch và thực hiện hành động trong môi trường của chúng. Ví dụ, các LLMs có thể suy luận rằng chúng cần thực hiện một API call để hoàn thành một nhiệm vụ, sau đó tạo ra các đầu vào cần thiết cho API call đó. Khi đó, chúng tôi nhận ra rằng các large language models có thể được sử dụng như các agents để hoàn thành nhiều loại nhiệm vụ, bao gồm cả phát triển phần mềm phức tạp và xử lý sự cố vận hành.</p>
+<p>Vào thời điểm đó, các LLMs thường chưa được huấn luyện để hoạt động như các agents. Chúng thường được huấn luyện chủ yếu cho hội thoại ngôn ngữ tự nhiên. Việc sử dụng thành công một LLM để suy luận và hành động đòi hỏi phải có những prompt phức tạp hướng dẫn cách dùng tools, các bộ parser cho phản hồi của model, và logic điều phối (orchestration logic). Chỉ riêng việc khiến LLMs tạo ra JSON đúng cú pháp một cách ổn định đã là một thách thức lúc bấy giờ! Để tạo prototype và triển khai agents, nhóm của tôi phải dựa vào nhiều thư viện framework agent phức tạp, những thứ xử lý phần khung (scaffolding) và logic điều phối cần thiết để các agents có thể hoàn thành nhiệm vụ một cách ổn định với các model thế hệ trước. Ngay cả khi đã có các framework đó, chúng tôi vẫn phải mất nhiều tháng tinh chỉnh để đưa một agent vào production.</p>
+<p>Kể từ đó, chúng tôi đã chứng kiến sự cải thiện vượt bậc trong khả năng suy luận và sử dụng tools để hoàn thành nhiệm vụ của các large language models. Chúng tôi nhận ra rằng mình không còn cần đến những orchestration phức tạp như trước để xây dựng agents, bởi vì các mô hình nay đã có khả năng lý luận và sử dụng công cụ một cách tự nhiên. Thực tế, một số thư viện framework agent mà chúng tôi từng dùng để xây dựng agents lại bắt đầu trở thành rào cản, khiến chúng tôi không thể tận dụng hết khả năng của các LLMs thế hệ mới. Mặc dù các LLMs đã tiến bộ rõ rệt, điều đó không đồng nghĩa rằng chúng tôi có thể xây dựng và lặp nhanh hơn với các frameworks cũ – việc đưa một agent sẵn sàng cho sản phẩm vẫn phải mất hàng tháng.</p>
+<p>Chúng tôi đã bắt đầu xây dựng Strands Agents để loại bỏ sự phức tạp này cho các nhóm trong Q Developer. Chúng tôi nhận thấy rằng việc dựa vào khả năng mới nhất của các models để điều khiển agents giúp giảm đáng kể thời gian đưa sản phẩm ra thị trường và cải thiện trải nghiệm người dùng cuối, so với cách xây dựng agents bằng logic điều phối phức tạp. Nếu trước đây nhóm Q Developer phải mất hàng tháng để đưa một agent từ quy trình sang sản phẩm, thì nay chúng tôi có thể phát hành các agents mới chỉ trong vài ngày hoặc vài tuần với Strands.</p>
+<h2 id="các-khái-niệm-cốt-lõi-của-strands-agents">Các khái niệm cốt lõi của Strands Agents</h2>
+<p>Định nghĩa đơn giản nhất về một agent là sự kết hợp của ba yếu tố: 1) mô hình, 2) các công cụ, và 3) câu lệnh. Agent sử dụng ba thành phần này để hoàn thành một nhiệm vụ, thường theo cách tự động. Nhiệm vụ của agent có thể là trả lời một câu hỏi, sinh ra code, lên kế hoạch cho một chuyến du lịch, hoặc tối ưu danh mục tài chính của bạn. Trong cách tiếp cận model-driven, agent sử dụng mô hình để tự động định hướng các bước của mình và sử dụng công cụ nhằm hoàn thành nhiệm vụ đã được chỉ định.</p>
+<p><img src="../../../images/3-Translated-Blogs/Blog1_1.png" alt="prompt diagram"></p>
+<p>Để định nghĩa một agent với Strands Agents SDK, bạn cần khai báo ba thành phần này trong code:</p>
+<ol>
+<li><strong>Mô hình</strong>: Strands cung cấp khả năng hỗ trợ mô hình linh hoạt. Bạn có thể sử dụng bất kỳ mô hình nào trong <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html">Amazon Bedrock</a> có hỗ trợ sử dụng công cụ (tool use) và truyền tải (streaming), một mô hình từ họ Claude của Anthropic thông qua <a href="https://www.anthropic.com/api">Anthropic API</a>, một mô hình từ họ Llama thông qua Llama API, <a href="https://ollama.com/">Ollama</a> cho phát triển cục bộ, và nhiều nhà cung cấp mô hình khác như OpenAI thông qua <a href="https://docs.litellm.ai/docs/">LiteLLM</a>. Ngoài ra, bạn cũng có thể định nghĩa nhà cung cấp mô hình tùy chỉnh của riêng mình với Strands.</li>
+<li><strong>Công cụ</strong>: Bạn có thể chọn từ hàng ngàn máy chủ <a href="https://modelcontextprotocol.io/examples">Model Context Protocol (MCP)</a> đã được công bố để sử dụng làm công cụ cho agent của bạn. Strands cũng cung cấp hơn <a href="https://strandsagents.com/0.1.x/user-guide/concepts/tools/tools_overview/#3-experimental-tools-package">20 công cụ ví dụ dựng sẵn</a>, bao gồm các công cụ để thao tác với tệp tin, thực hiện các yêu cầu API, và tương tác với AWS APIs. Bạn có thể dễ dàng sử dụng bất kỳ hàm Python nào như một công cụ, chỉ bằng cách dùng Strands <code>@tool</code> decorator.</li>
+<li><strong>Câu lệnh</strong>: Bạn cung cấp một câu lệnh bằng ngôn ngữ tự nhiên để định nghĩa nhiệm vụ cho agent, ví dụ như trả lời một câu hỏi từ người dùng cuối. Bạn cũng có thể cung cấp một câu lệnh hệ thống để đưa ra các hướng dẫn chung và hành vi mong muốn cho agent.</li>
+</ol>
+<p>Một agent sẽ tương tác với mô hình và các công cụ của nó trong một vòng lặp cho đến khi hoàn thành nhiệm vụ được xác định bởi câu lệnh. Vòng lặp này là cốt lõi trong các khả năng của Strands. Vòng lặp của Strands tận dụng tối đa sức mạnh mà các LLMs đã đạt được và khả năng suy luận, lập kế hoạch, cũng như chọn công cụ một cách tự nhiên. Trong mỗi vòng lặp, Strands sẽ gọi LLM với câu lệnh và ngữ cảnh của agent, cùng với mô tả về các công cụ của agent. LLM có thể lựa chọn phản hồi bằng ngôn ngữ tự nhiên cho người dùng cuối của agent, lên kế hoạch cho một loạt bước, phản ánh lại các bước trước đó của agent, và/hoặc chọn một hoặc nhiều công cụ để sử dụng. Khi LLM chọn một công cụ, Strands sẽ đảm nhận việc thực thi công cụ đó và gửi kết quả trở lại cho LLM. Khi LLM hoàn thành nhiệm vụ, Strands sẽ trả về kết quả cuối cùng của agent.<img src="../../../images/3-Translated-Blogs/Blog1_2.png" alt="agentic-loop"></p>
+<p>Trong cách tiếp cận định hướng theo mô hình của Strands, các công cụ (tools) là yếu tố then chốt để bạn tùy chỉnh hành vi của agents. Ví dụ, công cụ có thể truy xuất tài liệu liên quan từ một knowledge base, gọi APIs, chạy logic Python, hoặc đơn giản chỉ trả về một chuỗi tĩnh chứa các hướng dẫn bổ sung cho model. Công cụ cũng giúp bạn thực hiện các use case phức tạp trong cách tiếp cận định hướng theo mô hình, chẳng hạn như với các công cụ dựng sẵn trong Strands Agents:</p>
+<ul>
+<li><strong>Retrieve tool:</strong> Công cụ này triển khai semantic search bằng <a href="https://aws.amazon.com/bedrock/knowledge-bases/">Amazon Bedrock Knowledge Bases</a>. Ngoài việc truy xuất tài liệu, retrieve tool còn có thể hỗ trợ model lập kế hoạch và suy luận bằng cách truy xuất các công cụ khác thông qua tìm kiếm ngữ nghĩa. Ví dụ, một agent nội bộ tại AWS có hơn 6.000 công cụ để lựa chọn! Các models hiện nay chưa có khả năng chọn chính xác trong số lượng công cụ lớn đến vậy. Thay vì mô tả cả 6.000 công cụ cho model, agent sử dụng tìm kiếm ngữ nghĩa để tìm ra những công cụ phù hợp nhất cho nhiệm vụ hiện tại và chỉ mô tả những công cụ đó cho model. Bạn có thể áp dụng cách này bằng cách lưu trữ nhiều mô tả công cụ trong một cơ sở tri thức và để model sử dụng retrieve tool để lấy ra tập hợp công cụ liên quan cho nhiệm vụ hiện tại.</li>
+<li><strong>Thinking tool:</strong> Công cụ này nhắc model thực hiện phân tích chuyên sâu qua nhiều vòng lặp, cho phép xử lý tư duy phức tạp và tự phản chiếu như một phần của agent. Trong cách tiếp cận định hướng theo mô hình, việc mô hình hóa tư duy như một công cụ cho phép model suy luận xem một nhiệm vụ có cần đến phân tích sâu hay không, và khi nào cần.</li>
+<li><strong>Multi-agent tools như</strong> workflow, graph và swarm tools: Với các nhiệm vụ phức tạp, Strands có thể điều phối nhiều agents theo nhiều mô hình cộng tác đa-agent khác nhau. Bằng cách mô hình hóa các sub-agents và sự cộng tác đa-agent như những công cụ, cách tiếp cận model-driven cho phép model suy luận xem một nhiệm vụ có yêu cầu một workflow, một graph, hay một swarm các sub-agents hay không. Strands sẽ sớm hỗ trợ Agent2Agent (A2A) protocol cho các ứng dụng multi-agent.</li>
+</ul>
+<h2 id="bắt-đầu-với-strands-agents">Bắt đầu với Strands Agents</h2>
+<p>Hãy cùng đi qua một ví dụ về cách xây dựng một agent với Strands Agents SDK. <a href="https://martinfowler.com/bliki/TwoHardThings.html">Như người ta thường nói</a>, việc đặt tên là một trong những vấn đề khó nhất trong khoa học máy tính. Đặt tên cho một dự án mã nguồn mở cũng không ngoại lệ! Để giúp chúng tôi động não các tên tiềm năng cho dự án Strands Agents, tôi đã xây dựng một trợ lý AI đặt tên bằng Strands. Trong ví dụ này, bạn sẽ sử dụng Strands để xây dựng một naming agent với một mô hình mặc định trong Amazon Bedrock, một MCP server, và một công cụ dựng sẵn (pre-built tool) của Strands.</p>
+<p>Tạo một file có tên <code>agent.py</code> với đoạn code sau:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.tools.mcp <span style="color:#f92672">import</span> MCPClient
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools <span style="color:#f92672">import</span> http_request
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mcp <span style="color:#f92672">import</span> stdio_client, StdioServerParameters
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define a naming-focused system prompt</span>
+</span></span><span style="display:flex;"><span>NAMING_SYSTEM_PROMPT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">You are an assistant that helps to name open source projects.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">When providing open source project name suggestions, always provide
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">one or more available domain names and one or more available GitHub
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">organization names that could be used for the project.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Before providing your suggestions, use your tools to validate
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">that the domain names are not already registered and that the GitHub
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">organization names are not already used.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load an MCP server that can determine if a domain name is available</span>
+</span></span><span style="display:flex;"><span>domain_name_tools <span style="color:#f92672">=</span> MCPClient(<span style="color:#66d9ef">lambda</span>: stdio_client(
+</span></span><span style="display:flex;"><span>    StdioServerParameters(command<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uvx&#34;</span>, args<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;fastdomaincheck-mcp-server&#34;</span>])
+</span></span><span style="display:flex;"><span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use a pre-built Strands Agents tool that can make requests to GitHub</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># to determine if a GitHub organization name is available</span>
+</span></span><span style="display:flex;"><span>github_tools <span style="color:#f92672">=</span> [http_request]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> domain_name_tools:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define the naming agent with tools and a system prompt</span>
+</span></span><span style="display:flex;"><span>    tools <span style="color:#f92672">=</span> domain_name_tools<span style="color:#f92672">.</span>list_tools_sync() <span style="color:#f92672">+</span> github_tools
+</span></span><span style="display:flex;"><span>    naming_agent <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>        system_prompt<span style="color:#f92672">=</span>NAMING_SYSTEM_PROMPT,
+</span></span><span style="display:flex;"><span>        tools<span style="color:#f92672">=</span>tools
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Run the naming agent with the end user&#39;s prompt</span>
+</span></span><span style="display:flex;"><span>    naming_agent(<span style="color:#e6db74">&#34;I need to name an open source project for building AI agents.&#34;</span>)
+</span></span></code></pre></div><p>Bạn sẽ cần một <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">Khóa truy cập cá nhân của GITHUB</a> để chạy agent. Hãy thiết lập biến môi trường <code>GITHUB\_TOKEN</code> với giá trị là GitHub token của bạn. Bạn cũng sẽ cần quyền truy cập <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html">Bedrock model</a> cho Anthropic Claude 3.7 Sonnet tại khu vực us-west-2, và AWS credentials đã được cấu hình cục bộ.</p>
+<p>Bây giờ hãy chạy agent của bạn:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install strands<span style="color:#f92672">-</span>agents strands<span style="color:#f92672">-</span>agents<span style="color:#f92672">-</span>tools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python <span style="color:#f92672">-</span>u agent<span style="color:#f92672">.</span>py
+</span></span></code></pre></div><p>You should see output from the agent similar to this snippet:</p>
+<pre tabindex="0"><code>Based on my checks, here are some name suggestions for your
+
+open source AI agent building project:
+
+## Project Name Suggestions:
+
+1. **Strands Agents**
+
+- Available domain: strandsagents.com
+
+- Available GitHub organization: strands-agents
+</code></pre><p>Bạn có thể dễ dàng bắt đầu xây dựng các agent mới ngay hôm nay với Strands Agents SDK trong công cụ phát triển được hỗ trợ AI mà bạn yêu thích. Để giúp bạn khởi đầu nhanh chóng, chúng tôi đã phát hành một Strands MCP server để sử dụng với bất kỳ công cụ phát triển nào có hỗ trợ MCP, chẳng hạn như <a href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-installing.html">Q Developer CLI</a> hoặc Cline. Đối với Q Developer CLI, hãy dùng ví dụ sau để thêm Strands MCP server vào <a href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-mcp-configuration.html">cấu hình MCP</a> của CLI. Bạn có thể xem thêm các ví dụ cấu hình khác trên <a href="https://github.com/strands-agents/mcp-server/">GitHub.</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#34;mcpServers&#34;</span>: {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#34;strands&#34;</span>: {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;uvx&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#34;args&#34;</span>: [<span style="color:#e6db74">&#34;strands-agents-mcp-server&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="triển-khai-sản-phẩm-strands-agents">Triển khai sản phẩm Strands Agents</h2>
+<p>Việc triển khai sản phẩm agents là một nguyên tắc quan trọng trong thiết kế của Strands. Dự án Strands Agents bao gồm một bộ công cụ triển khai <a href="https://strandsagents.com/0.1.x/user-guide/deploy/operating-agents-in-production/">(deployment toolkit)</a> với tập hợp nhiều nguồn tham khảo để giúp bạn đưa ra sản phẩm agents. Strands đủ linh hoạt để hỗ trợ nhiều kiến trúc khác nhau trong sản phẩm. Bạn có thể dùng Strands để xây dựng các agents trò chyện cũng như các agents được kích hoạt bởi sự kiện, chạy theo lịch trình, hoặc chạy liên tục. Bạn có thể triển khai một agent được xây dựng với Strands Agents SDK dưới dạng monolith, nơi cả vòng lặp và việc thực thi tool cùng chạy trong một môi trường, hoặc dưới dạng một tập hợp các dịch vụ mini. Tôi sẽ mô tả bốn kiến trúc agent mà chúng tôi sử dụng nội bộ tại AWS với Strands Agents.</p>
+<p>Sơ đồ dưới đây minh họa một kiến trúc agent với Strands chạy hoàn toàn cục bộ trong môi trường của người dùng thông qua một client application. <a href="https://github.com/strands-agents/agent-builder">Ví dụ về công cụ dòng lệnh trên</a> GitHub áp dụng kiến trúc này cho một AI assistant dựa trên CLI để xây dựng agents.</p>
+<p><img src="../../../images/3-Translated-Blogs/Blog1_3.png" alt="Run agent entirely locally"></p>
+<p>Sơ đồ tiếp theo minh họa một kiến trúc trong đó agent và các công cụ của nó được triển khai phía sau một API trong môi trường sản phẩm. Chúng tôi đã cung cấp các tài liệu tham khảo trên GitHub về cách triển khai các agents được xây dựng với Strands Agents SDK phía sau một API trên AWS, sử dụng <u><a href="https://strandsagents.com/0.1.x/user-guide/deploy/deploy_to_aws_lambda/">AWS Lambda</a>, <a href="https://strandsagents.com/0.1.x/user-guide/deploy/deploy_to_aws_fargate/">AWS Fargate</a>, hoặc <a href="https://strandsagents.com/0.1.x/user-guide/deploy/deploy_to_amazon_ec2/">Amazon Elastic Compute Cloud (Amazon EC2)</a></u>.</p>
+<p><img src="../../../images/3-Translated-Blogs/Blog1_4.png" alt="Run agent behind an AI"></p>
+<p>Bạn có thể tách biệt trách nhiệm giữa vòng lặp Strands và việc thực thi công cụ bằng cách chạy chúng trong các môi trường riêng biệt. Sơ đồ dưới đây minh họa một kiến trúc agent với Strands, trong đó agent gọi các công cụ của nó thông qua API, và các công cụ chạy trong một môi trường backend độc lập, tách rời với môi trường của agent. Ví dụ, bạn có thể chạy các công cụ của agent trong Lambda functions, trong khi chạy bản thân agent trong một khối Fargate.</p>
+<p><img src="../../../images/3-Translated-Blogs/Blog1_5.png" alt="Run tools in an isolated backend environment"></p>
+<p>Bạn cũng có thể triển khai mô hình return-of-control với Strands, trong đó client chịu trách nhiệm chạy các công cụ. Sơ đồ này minh họa một kiến trúc agent, nơi một agent được xây dựng với Strands Agents SDK có thể sử dụng kết hợp cả các công cụ được lưu trữ trong môi trường backend và các công cụ chạy cục bộ thông qua một client application gọi tới agent.</p>
+<p><img src="../../../images/3-Translated-Blogs/Blog1_6.png" alt="Run a mix of tools in the user’s environment and in the backend"></p>
+<p>Bất kể kiến trúc cụ thể của bạn như thế nào, khả năng quan sát của agents vẫn rất quan trọng để hiểu cách chúng hoạt động trong môi trường sản phẩm. Strands cung cấp cơ chế đo đạc để thu thập quỹ đạo và số liệu từ các sản phẩm agents. Strands sử dụng OpenTelemetry (OTEL) để phát dữ liệu đo đạc từ xa đến bất kỳ backend nào tương thích với OTEL nhằm phục vụ trực quan hóa, xử lý sự cố và đánh giá. Hỗ trợ theo dõi phân tán của Strands cho phép bạn theo dõi các request đi qua các thành phần khác nhau trong kiến trúc của mình, nhằm cung cấp một bức tranh toàn diện về các phiên làm việc của agent.</p>
+<h2 id="tham-gia-cộng-đồng-strands-agents">Tham gia cộng đồng Strands Agents</h2>
+<p>Strands Agents là một dự án mã nguồn mở được cấp phép theo Apache License 2.0. Chúng tôi rất háo hức khi có thể cùng bạn xây dựng Strands một cách công khai. Chúng tôi hoan nghênh mọi đóng góp cho dự án, bao gồm việc bổ sung hỗ trợ cho các mô hình và công cụ từ những nhà cung cấp khác, hợp tác phát triển các tính năng mới, hoặc mở rộng tài liệu. Nếu bạn phát hiện lỗi, có đề xuất, hoặc muốn đóng góp điều gì đó, hãy tham gia cùng chúng tôi trên <a href="https://github.com/strands-agents">GitHub.</a></p>
+<p>Để tìm hiểu thêm về Strands Agents và bắt đầu xây dựng AI agent đầu tiên của bạn với Strands, hãy truy cập vào <a href="https://github.com/strands-agents/docs">tài liệu hướng dẫn</a> của chúng tôi.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><img src="../../../images/3-Translated-Blogs/Blog1_7.jpg" alt="Clare Liguori"></td>
+          <td><strong>Clare Liguori</strong> <br> Clare Liguori is a Senior Principal Software Engineer for AWS Agentic AI. She focuses on re-imagining how applications are built and how productive developers can be when their tools are powered by generative AI and AI agents, as part of Amazon Q Developer.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/" title="Các bài blogs đã dịch"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.2-blog2/" title="Blog 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1764858849"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1764858849"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1764858849"></script>
+    <script src="../../../js/jquery.sticky.js?1764858849"></script>
+    <script src="../../../js/featherlight.min.js?1764858849"></script>
+    <script src="../../../js/highlight.pack.js?1764858849"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1764858849"></script>
+    <script src="../../../js/learn.js?1764858849"></script>
+    <script src="../../../js/hugo-learn.js?1764858849"></script>
+
+    <link href="../../../mermaid/mermaid.css?1764858849" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1764858849"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

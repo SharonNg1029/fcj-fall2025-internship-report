@@ -1,0 +1,13 @@
+/resources/
+/themes/**/exampleSite
+node_modules/
+.hugo_build.lock
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

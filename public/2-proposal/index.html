@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/fcj-fall2025-internship-report/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=fcj-fall2025-internship-report/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="ngannnkse182088@fpt.edu.vn" />
+
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+    <title>Proposal :: Internship Report</title>
+
+    
+    <link href="../css/nucleus.css?1764858848" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1764858848" rel="stylesheet">
+    <link href="../css/hybrid.css?1764858848" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1764858848" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1764858848" rel="stylesheet">
+    <link href="../css/auto-complete.css?1764858848" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1764858848" rel="stylesheet">
+    <link href="../css/theme.css?1764858848" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1764858848" rel="stylesheet">
+    
+    <link href="../css/theme-workshop.css?1764858848" rel="stylesheet">
+    
+    
+
+    <script src="../js/jquery-3.3.1.min.js?1764858848"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../2-proposal/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+  
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js?1764858848"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1764858848"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/fcj-fall2025-internship-report\/";
+    
+</script>
+<script type="text/javascript" src="../js/search.js?1764858848"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    
+    <div style="display:none" id="debug-sections">
+      Total sections: 7
+      
+        | Worklog (1)
+      
+        | Proposal (2)
+      
+        | Translated Blogs (3)
+      
+        | Events Attended (4)
+      
+        | Workshop (5)
+      
+        | Self-Assessment (6)
+      
+        | Sharing &amp; Feedback (7)
+      
+    </div>
+    
+    <ul class="topics">
+              
+
+ 
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item
+        
+        active
+        "
+>
+  <a href="../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Attended"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/">
+     <b> 4. </b> Events Attended 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.1-event1/">
+    <b> 4.1. </b>Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.2-event2/">
+    <b> 4.2. </b>Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.3-event3/">
+    <b> 4.3. </b>Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/4-eventparticipated/4.4-event4/"
+  title="Event 4"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.4-event4/">
+    <b> 4.4. </b>Event 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/4-eventparticipated/4.5-event5/"
+  title="Event 5"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.5-event5/">
+    <b> 4.5. </b>Event 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title="Prerequiste"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Prerequiste 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/"
+  title="Access S3 from VPC"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-s3-vpc/">
+     <b> 5.3. </b> Access S3 from VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title="Create a gateway endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     <b> 5.3.1 </b> Create a gateway endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title="Test the Gateway Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     <b> 5.3.2 </b> Test the Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/"
+  title="Access S3 from on-premises"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/">
+     <b> 5.4. </b> Access S3 from on-premises 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+  <ul>
+          
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title="Prepare the environment"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     <b> 5.4.1 </b> Prepare the environment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title="Create an S3 Interface endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     <b> 5.4.2 </b> Create an S3 Interface endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title="Test the Interface Endpoint"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     <b> 5.4.3 </b> Test the Interface Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title="On-premises DNS Simulation"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     <b> 5.4.4 </b> On-premises DNS Simulation 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.5-policy/"
+  title="VPC Endpoint Policies"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.5-policy/">
+     <b> 5.5. </b> VPC Endpoint Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+           
+
+ 
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title="Clean up"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Clean up 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+     
+  </ul>
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+          
+
+ 
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing &amp; Feedback"
+  class="dd-item
+        
+        
+        "
+>
+  <a href="../7-feedback/">
+     <b> 7. </b> Sharing &amp; Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+  
+  
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/fcj-fall2025-internship-report/2-proposal/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/fcj-fall2025-internship-report/vi/2-proposal/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='../'>Internship Report</a> > Proposal
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#cloud-based-serverless-student-management-system-for-students-and-small-businesses">Cloud-based serverless student management system for students and small businesses</a>
+      <ul>
+        <li><a href="#1-executive-summary">1. Executive Summary</a></li>
+        <li><a href="#2-problem-statement">2. Problem Statement</a></li>
+        <li><a href="#3-solution-architecture">3. Solution Architecture</a></li>
+        <li><a href="#4-technical-implementation">4. Technical Implementation</a></li>
+        <li><a href="#5-roadmap--key-milestones">5. Roadmap &amp; Key Milestones</a></li>
+        <li><a href="#6-budget-estimate">6. Budget Estimate</a></li>
+        <li><a href="#7-risk-assessment">7. Risk Assessment</a></li>
+        <li><a href="#8-expected-results">8. Expected Results</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Proposal
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="serverless-student-management-system">Serverless Student Management System</h1>
+<h2 id="cloud-based-serverless-student-management-system-for-students-and-small-businesses">Cloud-based serverless student management system for students and small businesses</h2>
+<h3 id="1-executive-summary">1. Executive Summary</h3>
+<p>Serverless Student Management Platform is a cloud-based student management platform designed for educational institutions and small businesses to enhance the management, analysis, and interaction of student data. The platform supports up to 50-100 students initially, with the ability to flexibly scale up to 500-1000 students without major infrastructure changes, using AWS Serverless services such as Lambda, DynamoDB, AppSync, and EventBridge.</p>
+<p>Users can access it via a friendly web interface (supporting real-time chat for assignments and comments) combined with APIs for real-time data transmission, ensuring high interactivity. The platform leverages AWS to provide centralized management (secure data storage), predictive analytics (via Personalize for score rankings and recommendations), reminder notifications (via SES), and system monitoring (via CloudWatch), while optimizing costs by charging only for actual usage.</p>
+<h3 id="2-problem-statement">2. Problem Statement</h3>
+<p><strong>Current Issues</strong></p>
+<p>Current student management systems require manual data entry, making it difficult to manage multiple classes. There is no centralized system for data or real-time analytics, and third-party platforms are often expensive and overly complex. Lack of real-time communication features leads to delayed communication, absence of incentive mechanisms like diligence ranking, and manual exam event processing.</p>
+<p><strong>Solution</strong></p>
+<p>The platform uses Amazon API Gateway to handle REST requests, AWS Lambda for business logic processing, Amazon DynamoDB for storing student data and scores, and AWS AppSync with GraphQL for real-time communication. AWS Amplify with React/Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to traditional LMS systems but with lower costs, users can register new students and manage information, but this platform operates at a smaller scale and serves educational purposes. Key features include real-time management dashboard, learning trend analysis, and low operational costs.</p>
+<p><strong>Benefits and Return on Investment (ROI)</strong></p>
+<p>The solution creates a foundation for IT students to develop AWS serverless skills while providing efficient management tools for teachers in instruction and assessment. The platform reduces manual reporting for each class through centralized systems, simplifies management and maintenance, and improves data reliability. Monthly costs estimated at $7-20 USD (according to AWS Pricing Calculator), totaling $21-60 USD for 3 months. All AWS resources are used within free tier and low-cost options, with no additional development costs. ROI period of 3-6 months through significant savings in manual operations time and improved teaching efficiency.</p>
+<h3 id="3-solution-architecture">3. Solution Architecture</h3>
+<p>The system is designed following the AWS Well-Architected Framework with interconnected layers, ensuring data management capabilities, authentication, monitoring, real-time communication, ML ranking, notifications, and continuous event processing. The serverless architecture helps optimize costs and ensures automatic scalability.</p>
+<p><img src="../images/2-Proposal/serverless_student_manament_system_solution_architect.png" alt="Platform Architecture Diagram"></p>
+<h4 id="aws-core-services-used">AWS Core Services Used</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Service</strong></th>
+          <th><strong>Primary Function</strong></th>
+          <th><strong>Key Benefits</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Amazon Route 53</strong></td>
+          <td>DNS management and routing traffic to CloudFront</td>
+          <td>Custom domain setup, health checks, geo-routing, SSL certificates integration</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudFront</strong></td>
+          <td>CDN distribution for static website and frontend resources</td>
+          <td>Reduce global latency, Edge caching, HTTPS, support HTTP/2 and HTTP/3, integrate WAF/Shield, custom domain (ACM), OAC protects S3</td>
+      </tr>
+      <tr>
+          <td><strong>AWS WAF</strong></td>
+          <td>Web Application Firewall protection against attacks</td>
+          <td>Block malicious requests, rate limiting, IP filtering, CloudFront integration</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Amplify</strong></td>
+          <td>Deploy and host frontend dashboard with CI/CD</td>
+          <td>Easy build/deploy web apps, seamless integration with Cognito and AppSync</td>
+      </tr>
+      <tr>
+          <td><strong>AWS AppSync</strong></td>
+          <td>Support GraphQL API with subscriptions for realtime chat</td>
+          <td>Real-time data updates via WebSockets, easy integration with DynamoDB and Lambda</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon API Gateway</strong></td>
+          <td>Handle API requests and connect frontend-backend</td>
+          <td>Support RESTful APIs, throttling and caching to improve performance</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon Cognito</strong></td>
+          <td>Manage user authentication and authorization</td>
+          <td>Support MFA, JWT tokens, easy integration with frontend</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Lambda</strong></td>
+          <td>Execute CRUD logic without servers</td>
+          <td>Auto-scale, pay-per-use, reduce operational costs</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon DynamoDB</strong></td>
+          <td>Store NoSQL data for student information and chat messages</td>
+          <td>Fast queries, auto-scale, support GSI for complex searches</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudWatch</strong></td>
+          <td>Monitor system logs and metrics</td>
+          <td>Real-time monitoring, alarms to detect issues early</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon S3</strong></td>
+          <td>Store static files for frontend dashboard</td>
+          <td>Cheap static website hosting, high durability</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon EventBridge</strong></td>
+          <td>Route events from management web to process exams (update scores, reminders)</td>
+          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Personalize</strong></td>
+          <td>Build ML models to rank students based on activity data</td>
+          <td>Personalized ranking, auto-learn from data, support real-time inference</td>
+      </tr>
+      <tr>
+          <td><strong>AWS SES</strong></td>
+          <td>Send ranking notification emails and system updates</td>
+          <td>Easy integration with Lambda, support millions of emails/month, low cost</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeBuild</strong></td>
+          <td>Build and test code from GitLab repository</td>
+          <td>Auto compile, package artifacts, run unit tests in pipeline</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeDeploy</strong></td>
+          <td>Deploy applications to AWS services</td>
+          <td>Blue/green deployment, rollback capabilities, zero-downtime deployment</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodePipeline</strong></td>
+          <td>Orchestrate CI/CD pipeline from source to deploy</td>
+          <td>Automate the entire process, integrate with GitLab/CodeBuild/CodeDeploy, support approvals and notifications.</td>
+      </tr>
+      <tr>
+          <td><strong>GitLab</strong></td>
+          <td>Source control and trigger CI/CD pipeline</td>
+          <td>Version control, merge requests, issue tracking, webhook integration</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="thiết-kế-thành-phần">Thiết kế thành phần</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Layer</strong></th>
+          <th><strong>Thành phần chính</strong></th>
+          <th><strong>Chức năng</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Edge Layer</strong></td>
+          <td>Route53, CloudFront, WAF</td>
+          <td>DNS, CDN, layer security</td>
+      </tr>
+      <tr>
+          <td><strong>Frontend Layer</strong></td>
+          <td>Amplify, AppSync, Cognito</td>
+          <td>Web interface, realtime chat, authentication</td>
+      </tr>
+      <tr>
+          <td><strong>Backend Layer</strong></td>
+          <td>API Gateway, Lambda, DynamoDB</td>
+          <td>Logic processing, CRUD, data storage</td>
+      </tr>
+      <tr>
+          <td><strong>Event &amp; ML Layer</strong></td>
+          <td>EventBridge, SES, Personalize</td>
+          <td>Send notifications, process ML ranking</td>
+      </tr>
+      <tr>
+          <td><strong>Monitoring Layer</strong></td>
+          <td>CloudWatch</td>
+          <td>Logs, metrics, alerts</td>
+      </tr>
+      <tr>
+          <td><strong>CI/CD Layer</strong></td>
+          <td>GitLab, CodePipeline, CodeBuild, CodeDeploy, S3</td>
+          <td>Build &amp; deploy automation</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="chú-thích-luồng-chính">Chú thích luồng chính</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Luồng</strong></th>
+          <th><strong>Mô tả</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>(1)</strong></td>
+          <td>User access via Route53 → CloudFront → Amplify (frontend).</td>
+      </tr>
+      <tr>
+          <td><strong>(2)</strong></td>
+          <td>Amplify communicates with API Gateway or AppSync to send/receive data.</td>
+      </tr>
+      <tr>
+          <td><strong>(3.1)</strong></td>
+          <td>API Gateway → Lambda to handle logic (CRUD, events, etc.).</td>
+      </tr>
+      <tr>
+          <td><strong>(3.2)</strong></td>
+          <td>Cognito authenticates and returns tokens.</td>
+      </tr>
+      <tr>
+          <td><strong>(4)</strong></td>
+          <td>Lambda emits events via EventBridge.</td>
+      </tr>
+      <tr>
+          <td><strong>(4.1)</strong></td>
+          <td>EventBridge → SES sends reminder emails.</td>
+      </tr>
+      <tr>
+          <td><strong>(4.2)</strong></td>
+          <td>EventBridge → Lambda → Personalize for ML ranking.</td>
+      </tr>
+      <tr>
+          <td><strong>(5)</strong></td>
+          <td>Dev pushes code to GitLab → CodePipeline pull → CodeBuild/CodeDeploy → Amplify/Lambda.</td>
+      </tr>
+      <tr>
+          <td><strong>(6)</strong></td>
+          <td>CloudWatch collects logs and metrics.</td>
+      </tr>
+      <tr>
+          <td><strong>(7)</strong></td>
+          <td>AppSync sends realtime data (chat/notifications) to the frontend.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="4-technical-implementation">4. Technical Implementation</h3>
+<h4 id="implementation-phases">Implementation Phases</h4>
+<p>The project consists of 2 parts — developing a serverless student management system and building an intelligent analytics platform — each going through 4 phases:</p>
+<ol>
+<li><strong>Research and Architecture Design</strong>: Research AWS serverless patterns with DynamoDB and design architecture integrating realtime chat/ranking (1 month before internship).</li>
+<li><strong>Cost Calculation and Feasibility Check</strong>: Use AWS Pricing Calculator for estimation and adjust scope accordingly (Month 1).</li>
+<li><strong>Architecture Adjustment for Cost/Solution Optimization</strong>: Fine-tune (e.g., optimize Lambda with React SSR) to ensure efficiency (Month 2).</li>
+<li><strong>Development, Testing, Deployment</strong>: Program React frontend, AWS services with CDK/SDK and AppSync subscriptions, then test and deploy to production (Month 2–3).</li>
+</ol>
+<h4 id="technical-requirements">Technical Requirements</h4>
+<p><strong>Student Management System</strong>: Web dashboard (CRUD students, scores, courses), real-time chat, ML ranking. Frontend React/Next.js running on Amplify Hosting, using AppSync subscriptions to receive real-time chat messages and ranking updates. Cognito authenticates and authorizes all users, including 5-10 admins/teachers (with high privileges like CRUD data) and students (with limited privileges like viewing personal scores, joining chat).</p>
+<p><strong>Intelligent Analytics Platform</strong>: Practical knowledge of AWS Amplify (hosting React), Lambda (minimized due to SSR handling), AWS Personalize (ML ranking), DynamoDB (main NoSQL), AppSync (GraphQL + subscriptions), and EventBridge (event routing). Use AWS CDK/SDK for programming (e.g., EventBridge rules to Lambda for notifications). React SSR helps reduce Lambda load for fullstack web applications.</p>
+<h3 id="5-roadmap--key-milestones">5. Roadmap &amp; Key Milestones</h3>
+<p>The project is implemented over 14 weeks (from September to December 2025), divided into 6 main phases following the Agile model.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Phase</strong></th>
+          <th><strong>Timeline</strong></th>
+          <th><strong>Main Objective</strong></th>
+          <th><strong>Deliverables</strong></th>
+          <th><strong>Success Criteria</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Phase 1: Foundation Setup</strong></td>
+          <td>Weeks 1–2</td>
+          <td>Set up AWS environment</td>
+          <td>• AWS account setup<br>• DynamoDB &amp; Cognito config<br>• IaC templates<br></td>
+          <td>• AWS infrastructure working stably<br></td>
+      </tr>
+      <tr>
+          <td><strong>Phase 2: Backend Deployment</strong></td>
+          <td>Weeks 3–5</td>
+          <td>Build API and logic</td>
+          <td>• Lambda functions<br>• API Gateway &amp; AppSync endpoints</td>
+          <td>• CRUD &amp; chat mutations working</td>
+      </tr>
+      <tr>
+          <td><strong>Phase 3: Frontend Integration</strong></td>
+          <td>Weeks 6–7</td>
+          <td>Deploy dashboard &amp; chat</td>
+          <td>• S3 + CloudFront hosting<br>• Realtime subscriptions integration</td>
+          <td>• Dashboard &amp; chat accessible in real-time</td>
+      </tr>
+      <tr>
+          <td><strong>Phase 4: ML &amp; Ranking</strong></td>
+          <td>Weeks 8-9</td>
+          <td>Integrate Personalize</td>
+          <td>• Datasets import<br>• Ranking API</td>
+          <td>• Student ranking working</td>
+      </tr>
+      <tr>
+          <td><strong>Phase 5: Notification &amp; Monitoring</strong></td>
+          <td>Weeks 10–11</td>
+          <td>Integrate SES &amp; monitoring</td>
+          <td>• Email notifications<br>• CloudWatch alarms<br></td>
+          <td>• Notifications sent accurately</td>
+      </tr>
+      <tr>
+          <td><strong>Phase 6: Testing &amp; Review</strong></td>
+          <td>Weeks 12–14</td>
+          <td>Testing and finalization</td>
+          <td>• End-to-end tests<br>• Documentation &amp; Demo</td>
+          <td>• Stable system, complete demo</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="6-budget-estimate">6. Budget Estimate</h3>
+<p>You can view the cost on <a href="https://calculator.aws/#/estimate?id=security-monitoring-2025">AWS Pricing Calculator</a> or download the <a href="./budget-estimate.xlsx">budget estimate file</a>.</p>
+<h4 id="infrastructure-costs">Infrastructure Costs</h4>
+<p><strong>AWS Services:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Service</strong></th>
+          <th><strong>Usage Description</strong></th>
+          <th><strong>Estimated Cost / month (USD)</strong></th>
+          <th><strong>Notes</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Amazon API Gateway</strong></td>
+          <td>Process ~1M API calls/month</td>
+          <td>~$1.00 – $3.50</td>
+          <td>HTTP APIs: $1.00/million calls; REST: $3.50/million; free tier 1M calls.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Lambda</strong></td>
+          <td>~1M requests, 400k GB-seconds</td>
+          <td>~$0.20 – $0.50</td>
+          <td>Requests: $0.20/million; Duration: $0.0000166667/GB-second; free tier sufficient.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon DynamoDB</strong></td>
+          <td>~25 GB storage, 2.5M reads/writes</td>
+          <td>~$0.25 – $1.25</td>
+          <td>Reads: $0.25/million; Writes: $1.25/million; Storage: $0.25/GB; free tier 25 GB.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon Cognito</strong></td>
+          <td>~10k monthly active users</td>
+          <td>~$0.0055 – $0.015</td>
+          <td>Essentials: $0.015/MAU; free tier 10k MAUs.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon S3</strong></td>
+          <td>~5 GB storage, low requests</td>
+          <td>~$0.023 – $0.12</td>
+          <td>Storage: $0.023/GB; Requests: $0.0004/1k GET; free tier credits.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudWatch</strong></td>
+          <td>~5 GB logs, 10 metrics/alarms</td>
+          <td>~$0.03 – $0.50</td>
+          <td>Logs: $0.50/GB ingestion; Storage: $0.03/GB; Metrics: $0.30/metric; free tier 5 GB.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS AppSync</strong></td>
+          <td>~1M queries/subscriptions, realtime chat</td>
+          <td>~$0.50 – $2.00</td>
+          <td>Requests: $4.00/million; Data transfer: $0.09/GB; free tier 250k requests.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Personalize</strong></td>
+          <td>Train model weekly, ~10k interactions</td>
+          <td>~$0.50 – $5.00</td>
+          <td>Training: $0.25/hour; Inference: $0.00005/request; Storage: $0.05/GB.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS SES</strong></td>
+          <td>~10k emails/month</td>
+          <td>~$0.10 – $0.30</td>
+          <td>$0.10/1k emails; free tier 62k emails/first month.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon EventBridge</strong></td>
+          <td>~10k events/month, rules for exams</td>
+          <td>~$0.10 – $0.50</td>
+          <td>$1.00/million events; free tier 100k events/month.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Amplify</strong></td>
+          <td>Hosting dashboard, few builds/month</td>
+          <td>~$0.00 – $1.00</td>
+          <td>Build minutes: $0.01/minute; Hosting: $0.15/GB served; free tier available.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon Route 53</strong></td>
+          <td>DNS queries, hosted zones</td>
+          <td>~$0.50 – $1.00</td>
+          <td>Hosted zone: $0.50/zone/month; DNS queries: $0.40/million queries.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS WAF</strong></td>
+          <td>Web ACL evaluation, rules</td>
+          <td>~$1.00 – $3.00</td>
+          <td>Web ACL: $1.00/month; Rules: $0.60/million requests; managed rules additional.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeBuild</strong></td>
+          <td>~10 builds/month, 100 minutes</td>
+          <td>~$0.00 – $0.50</td>
+          <td>$0.005/build minute; free tier 100 minutes/month.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeDeploy</strong></td>
+          <td>Application deployments</td>
+          <td>~$0.00 – $0.20</td>
+          <td>EC2/on-premise: $0.02/deployment; serverless free.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudFront</strong></td>
+          <td>CDN delivers static content (Route53 &amp; Amplify/S3 connection)</td>
+          <td>~$0.10 – $1.00</td>
+          <td>First 1 TB/month free in Free Tier; $0.085/GB thereafter.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodePipeline</strong></td>
+          <td>CI/CD automation (GitLab connection → CodeBuild → CodeDeploy)</td>
+          <td>~$1.00</td>
+          <td>$1.00/month for each active pipeline.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="total-estimate">Total Estimate</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Total cost / month (estimate)</strong></th>
+          <th><strong>Total 3 months (estimate)</strong></th>
+          <th><strong>Notes</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>~$7 – $20 / month</strong></td>
+          <td><strong>~$21 – $60 / 3 months</strong></td>
+          <td>Depends on actual usage (chat, ranking, emails, events); leverage free tier. Additional Route53, WAF, CI/CD costs.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="notes">Notes</h4>
+<ul>
+<li>All main services are within first year Free Tier.</li>
+<li>Can reduce further if using AWS Educate / Credits for Students.</li>
+<li>Personalize &amp; SES costs based on volume; optimize with batch processing.</li>
+<li>EventBridge costs based on number of events; optimize with filter rules.</li>
+</ul>
+<h3 id="7-risk-assessment">7. Risk Assessment</h3>
+<p>Based on NIST Risk Management Framework, the project team identifies key risks and mitigation measures.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Risk Code</strong></th>
+          <th><strong>Description</strong></th>
+          <th><strong>Level</strong></th>
+          <th><strong>Mitigation</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>R1 – Data Leakage</strong></td>
+          <td>Data exposure due to misconfiguration</td>
+          <td><strong>High</strong></td>
+          <td>Apply Cognito auth, IAM least privilege, DynamoDB encryption</td>
+      </tr>
+      <tr>
+          <td><strong>R2 – API Overload</strong></td>
+          <td>Too many requests causing slowdown</td>
+          <td><strong>Medium</strong></td>
+          <td>Throttling API Gateway/AppSync, CloudWatch alarms</td>
+      </tr>
+      <tr>
+          <td><strong>R3 – Lambda Cold Start</strong></td>
+          <td>Delay on invocation</td>
+          <td><strong>Medium</strong></td>
+          <td>Optimize code, Provisioned Concurrency if needed</td>
+      </tr>
+      <tr>
+          <td><strong>R4 – Cost Overrun</strong></td>
+          <td>Unusual usage increase (high chat, emails)</td>
+          <td><strong>Medium</strong></td>
+          <td>AWS Budgets alerts, monitor Cost Explorer</td>
+      </tr>
+      <tr>
+          <td><strong>R5 – Service Downtime</strong></td>
+          <td>AWS interruption</td>
+          <td><strong>Low</strong></td>
+          <td>Multi-AZ config, DynamoDB backups</td>
+      </tr>
+      <tr>
+          <td><strong>R6 – Realtime Latency</strong></td>
+          <td>Chat delay due to subscriptions</td>
+          <td><strong>Medium</strong></td>
+          <td>Use AppSync caching, test with high load</td>
+      </tr>
+      <tr>
+          <td><strong>R7 – ML Accuracy</strong></td>
+          <td>Inaccurate ranking due to poor data</td>
+          <td><strong>Medium</strong></td>
+          <td>Validate datasets, periodic retraining with Lambda</td>
+      </tr>
+      <tr>
+          <td><strong>R8 – Event Processing Failure</strong></td>
+          <td>Error routing exam events</td>
+          <td><strong>Medium</strong></td>
+          <td>Dead-letter queues for EventBridge, test rules</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Contingency Plan (Summary):</strong></p>
+<ul>
+<li>Recovery: Use CloudFormation for fast rebuild.</li>
+<li>Communication: CloudWatch alarms send emails.</li>
+<li>Continuous Improvement: Weekly review, including chat performance, ranking, and event handling.</li>
+</ul>
+<h3 id="8-expected-results">8. Expected Results</h3>
+<p><strong>Technical Results:</strong></p>
+<ul>
+<li>Complete serverless student management system with full CRUD, real-time chat, ML ranking, email notifications, and exam event processing.</li>
+<li>Integration of API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify, CloudWatch, AppSync, Personalize, SES, EventBridge.</li>
+<li>Response time &lt;1 second, chat latency &lt;2 seconds, event processing &lt;5 seconds, uptime ≥99%.</li>
+<li>Actual cost ≤ $20/3 months.</li>
+</ul>
+<p><strong>Learning and Training Results:</strong></p>
+<ul>
+<li>Learners master serverless development, real-time apps, and event-driven architecture.</li>
+<li>Prepare for AWS Developer Associate certification.</li>
+<li>Develop IaC, NoSQL, Authentication, GraphQL, Personalization, Events skills.</li>
+</ul>
+<p><strong>Professional &amp; Presentation Results:</strong></p>
+<ul>
+<li>Report with dashboard, chat, ranking, email, and event demo.</li>
+<li>Demo CRUD, real-time chat, notifications, and exam event processing.</li>
+<li>Deployment guide documentation.</li>
+</ul>
+<p><strong>Long-term Value:</strong></p>
+<ul>
+<li>Easy to expand to mobile app or advanced AI analytics.</li>
+<li>Platform for serverless, real-time, and event-driven training labs.</li>
+</ul>
+<hr>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../1-worklog/1.12-week12/" title="Week 12 Worklog"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../3-blogstranslated/" title="Translated Blogs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js?1764858848"></script>
+    <script src="../js/perfect-scrollbar.min.js?1764858848"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1764858848"></script>
+    <script src="../js/jquery.sticky.js?1764858848"></script>
+    <script src="../js/featherlight.min.js?1764858848"></script>
+    <script src="../js/highlight.pack.js?1764858848"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js?1764858848"></script>
+    <script src="../js/learn.js?1764858848"></script>
+    <script src="../js/hugo-learn.js?1764858848"></script>
+
+    <link href="../mermaid/mermaid.css?1764858848" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1764858848"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
