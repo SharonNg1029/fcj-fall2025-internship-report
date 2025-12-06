@@ -6,12 +6,14 @@ chapter: false
 ---
 
 # Báo cáo thực tập
+
 ### Thông tin sinh viên:
+
 &emsp; **Họ và tên:** Nguyễn Nhật Kim Ngân
 
 &emsp; **Số điện thoại:** +84 333 982 942
 
-&emsp; **Email:**   ngannnkse182088@fpt.edu.vn
+&emsp; **Email:** ngannnkse182088@fpt.edu.vn
 
 &emsp; **Trường:** Đại học FPT Hồ Chí Minh
 
@@ -21,13 +23,11 @@ chapter: false
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
-&emsp; **Vị trí thực tập:** FCJ Intern
+&emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
 &emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 28/12/2025
 
 ![Ảnh đại diện](/images/avatar.jpg)
-
-
 
 ### Nội dung báo cáo
 

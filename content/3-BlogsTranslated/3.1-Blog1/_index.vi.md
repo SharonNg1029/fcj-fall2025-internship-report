@@ -6,10 +6,9 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-
 # Giới thiệu Strands Agents, mã nguồn mở của AI Agents SDK
 
-> Tác giả: Clare Liguori | ngày 16 tháng 5 năm 2025 | trong mục [Thông báo](https://aws.amazon.com/blogs/opensource/category/post-types/announcements/), [Trí tuệ nhân tạo](https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/), [AI tạo sinh](https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/generative-ai/), [Mã nguồn mở](https://aws.amazon.com/blogs/opensource/category/open-source/) | [Liên kết cố định](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/) | [Bình luận](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/#Comments) | [Chia sẻ](https://aws.amazon.com/vi/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/)
+> bởi Clare Liguori | ngày 16 tháng 5 năm 2025 | trong mục [Announcements](https://aws.amazon.com/blogs/opensource/category/post-types/announcements/), [Artificial Intelligence](https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/), [Geneative AI](https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/generative-ai/), [Open Source](https://aws.amazon.com/blogs/opensource/category/open-source/) | [Permalink](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/) | [Comments](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/#Comments) | [Shared](https://aws.amazon.com/vi/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/)
 
 Hôm nay, tôi rất vui mừng thông báo rằng chúng tôi cho ra mắt [Strands Agents](https://strandsagents.com/). Strands Agents là một mã nguồn mở SDK áp dụng cách tiếp cận model-driven để xây dựng và vận hành AI agents chỉ với vài dòng code. Strands có khả năng mở rộng từ những use case đơn giản đến phức tạp, từ phát triển cục bộ đến triển khai trong môi trường sản phẩm. Nhiều team tại AWS đã sử dụng Strands cho AI agents trong sản phẩm của họ, bao gồm Amazon Q Developer, AWS Glue, và VPC Reachability Analyzer. Giờ đây, tôi cực kì hồi hộp khi chia sẻ Strands với bạn để tạo nên AI agents của riêng mình.
 
@@ -33,7 +32,6 @@ Chúng tôi đã bắt đầu xây dựng Strands Agents để loại bỏ sự 
 
 ![prompt diagram](/images/3-Translated-Blogs/Blog1_1.png)
 
-
 Để định nghĩa một agent với Strands Agents SDK, bạn cần khai báo ba thành phần này trong code:
 
 1. **Mô hình**: Strands cung cấp khả năng hỗ trợ mô hình linh hoạt. Bạn có thể sử dụng bất kỳ mô hình nào trong [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html) có hỗ trợ sử dụng công cụ (tool use) và truyền tải (streaming), một mô hình từ họ Claude của Anthropic thông qua [Anthropic API](https://www.anthropic.com/api), một mô hình từ họ Llama thông qua Llama API, [Ollama](https://ollama.com/) cho phát triển cục bộ, và nhiều nhà cung cấp mô hình khác như OpenAI thông qua [LiteLLM](https://docs.litellm.ai/docs/). Ngoài ra, bạn cũng có thể định nghĩa nhà cung cấp mô hình tùy chỉnh của riêng mình với Strands.
@@ -44,9 +42,9 @@ Một agent sẽ tương tác với mô hình và các công cụ của nó tron
 
 Trong cách tiếp cận định hướng theo mô hình của Strands, các công cụ (tools) là yếu tố then chốt để bạn tùy chỉnh hành vi của agents. Ví dụ, công cụ có thể truy xuất tài liệu liên quan từ một knowledge base, gọi APIs, chạy logic Python, hoặc đơn giản chỉ trả về một chuỗi tĩnh chứa các hướng dẫn bổ sung cho model. Công cụ cũng giúp bạn thực hiện các use case phức tạp trong cách tiếp cận định hướng theo mô hình, chẳng hạn như với các công cụ dựng sẵn trong Strands Agents:
 
-* **Retrieve tool:** Công cụ này triển khai semantic search bằng [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/). Ngoài việc truy xuất tài liệu, retrieve tool còn có thể hỗ trợ model lập kế hoạch và suy luận bằng cách truy xuất các công cụ khác thông qua tìm kiếm ngữ nghĩa. Ví dụ, một agent nội bộ tại AWS có hơn 6.000 công cụ để lựa chọn! Các models hiện nay chưa có khả năng chọn chính xác trong số lượng công cụ lớn đến vậy. Thay vì mô tả cả 6.000 công cụ cho model, agent sử dụng tìm kiếm ngữ nghĩa để tìm ra những công cụ phù hợp nhất cho nhiệm vụ hiện tại và chỉ mô tả những công cụ đó cho model. Bạn có thể áp dụng cách này bằng cách lưu trữ nhiều mô tả công cụ trong một cơ sở tri thức và để model sử dụng retrieve tool để lấy ra tập hợp công cụ liên quan cho nhiệm vụ hiện tại.
-* **Thinking tool:** Công cụ này nhắc model thực hiện phân tích chuyên sâu qua nhiều vòng lặp, cho phép xử lý tư duy phức tạp và tự phản chiếu như một phần của agent. Trong cách tiếp cận định hướng theo mô hình, việc mô hình hóa tư duy như một công cụ cho phép model suy luận xem một nhiệm vụ có cần đến phân tích sâu hay không, và khi nào cần.
-* **Multi-agent tools như** workflow, graph và swarm tools: Với các nhiệm vụ phức tạp, Strands có thể điều phối nhiều agents theo nhiều mô hình cộng tác đa-agent khác nhau. Bằng cách mô hình hóa các sub-agents và sự cộng tác đa-agent như những công cụ, cách tiếp cận model-driven cho phép model suy luận xem một nhiệm vụ có yêu cầu một workflow, một graph, hay một swarm các sub-agents hay không. Strands sẽ sớm hỗ trợ Agent2Agent (A2A) protocol cho các ứng dụng multi-agent.
+- **Retrieve tool:** Công cụ này triển khai semantic search bằng [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/). Ngoài việc truy xuất tài liệu, retrieve tool còn có thể hỗ trợ model lập kế hoạch và suy luận bằng cách truy xuất các công cụ khác thông qua tìm kiếm ngữ nghĩa. Ví dụ, một agent nội bộ tại AWS có hơn 6.000 công cụ để lựa chọn! Các models hiện nay chưa có khả năng chọn chính xác trong số lượng công cụ lớn đến vậy. Thay vì mô tả cả 6.000 công cụ cho model, agent sử dụng tìm kiếm ngữ nghĩa để tìm ra những công cụ phù hợp nhất cho nhiệm vụ hiện tại và chỉ mô tả những công cụ đó cho model. Bạn có thể áp dụng cách này bằng cách lưu trữ nhiều mô tả công cụ trong một cơ sở tri thức và để model sử dụng retrieve tool để lấy ra tập hợp công cụ liên quan cho nhiệm vụ hiện tại.
+- **Thinking tool:** Công cụ này nhắc model thực hiện phân tích chuyên sâu qua nhiều vòng lặp, cho phép xử lý tư duy phức tạp và tự phản chiếu như một phần của agent. Trong cách tiếp cận định hướng theo mô hình, việc mô hình hóa tư duy như một công cụ cho phép model suy luận xem một nhiệm vụ có cần đến phân tích sâu hay không, và khi nào cần.
+- **Multi-agent tools như** workflow, graph và swarm tools: Với các nhiệm vụ phức tạp, Strands có thể điều phối nhiều agents theo nhiều mô hình cộng tác đa-agent khác nhau. Bằng cách mô hình hóa các sub-agents và sự cộng tác đa-agent như những công cụ, cách tiếp cận model-driven cho phép model suy luận xem một nhiệm vụ có yêu cầu một workflow, một graph, hay một swarm các sub-agents hay không. Strands sẽ sớm hỗ trợ Agent2Agent (A2A) protocol cho các ứng dụng multi-agent.
 
 ## Bắt đầu với Strands Agents
 
@@ -124,21 +122,16 @@ Bạn có thể dễ dàng bắt đầu xây dựng các agent mới ngay hôm n
 
 ```json
 {
+  "mcpServers": {
+    "strands": {
+      "command": "uvx",
 
-"mcpServers": {
-
-"strands": {
-
-"command": "uvx",
-
-"args": ["strands-agents-mcp-server"]
-
-}
-
-}
-
+      "args": ["strands-agents-mcp-server"]
+    }
+  }
 }
 ```
+
 ## Triển khai sản phẩm Strands Agents
 
 Việc triển khai sản phẩm agents là một nguyên tắc quan trọng trong thiết kế của Strands. Dự án Strands Agents bao gồm một bộ công cụ triển khai [(deployment toolkit)](https://strandsagents.com/0.1.x/user-guide/deploy/operating-agents-in-production/) với tập hợp nhiều nguồn tham khảo để giúp bạn đưa ra sản phẩm agents. Strands đủ linh hoạt để hỗ trợ nhiều kiến trúc khác nhau trong sản phẩm. Bạn có thể dùng Strands để xây dựng các agents trò chyện cũng như các agents được kích hoạt bởi sự kiện, chạy theo lịch trình, hoặc chạy liên tục. Bạn có thể triển khai một agent được xây dựng với Strands Agents SDK dưới dạng monolith, nơi cả vòng lặp và việc thực thi tool cùng chạy trong một môi trường, hoặc dưới dạng một tập hợp các dịch vụ mini. Tôi sẽ mô tả bốn kiến trúc agent mà chúng tôi sử dụng nội bộ tại AWS với Strands Agents.
@@ -167,6 +160,6 @@ Strands Agents là một dự án mã nguồn mở được cấp phép theo Apa
 
 Để tìm hiểu thêm về Strands Agents và bắt đầu xây dựng AI agent đầu tiên của bạn với Strands, hãy truy cập vào [tài liệu hướng dẫn](https://github.com/strands-agents/docs) của chúng tôi.
 
-|  |  |
-|---|---|
-| ![Clare Liguori](/images/3-Translated-Blogs/Blog1_7.jpg) | **Clare Liguori** <br> Clare Liguori is a Senior Principal Software Engineer for AWS Agentic AI. She focuses on re-imagining how applications are built and how productive developers can be when their tools are powered by generative AI and AI agents, as part of Amazon Q Developer.|
+|                                                          |                                                                                                                                                                                                                                                                                          |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Clare Liguori](/images/3-Translated-Blogs/Blog1_7.jpg) | **Clare Liguori** <br> Clare Liguori is a Senior Principal Software Engineer for AWS Agentic AI. She focuses on re-imagining how applications are built and how productive developers can be when their tools are powered by generative AI and AI agents, as part of Amazon Q Developer. |

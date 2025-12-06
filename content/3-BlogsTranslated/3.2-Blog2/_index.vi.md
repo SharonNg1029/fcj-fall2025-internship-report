@@ -8,7 +8,7 @@ pre: " <b> 3.2. </b> "
 
 # Giới thiệu tính năng kế toán dành cho AWS Parallel Computing Service
 
-> Tác giả: Ramin Torabi, Nick Ihli, và Tarun Mathur | ngày 15 tháng 5 năm 2025 | trong mục [Dịch vụ máy tính AWS Parallel](https://aws.amazon.com/blogs/hpc/category/compute/aws-parallel-computing-service/), [Máy tính hiệu suất cao](https://aws.amazon.com/blogs/hpc/category/high-performance-computing/), [Hướng dẫn kĩ thuật](https://aws.amazon.com/blogs/hpc/category/post-types/technical-how-to/) | [Link cố định](https://aws.amazon.com/blogs/hpc/introducing-managed-accounting-for-aws-parallel-computing-service/) | [Chia sẻ](https://aws.amazon.com/vi/blogs/hpc/introducing-managed-accounting-for-aws-parallel-computing-service/?fbclid=IwY2xjawNM0VpleHRuA2FlbQIxMABicmlkETFyQ01ESjRnbnpIU2RNWE5YAR4f-K9Oq4I7g2m7uxmLNKga5n8wdWk8TNtUjDNzteuPZ7RO-knTAHgx9EDW-A_aem_5AzfzcVcB_1yEvrtRQn-vA)
+> bởi Ramin Torabi, Nick Ihli, và Tarun Mathur | ngày 15 tháng 5 năm 2025 | trong mục [AWS Parallel Computing Service](https://aws.amazon.com/blogs/hpc/category/compute/aws-parallel-computing-service/) , [High Performance Computing](https://aws.amazon.com/blogs/hpc/category/high-performance-computing/), [ Technical How-to](https://aws.amazon.com/blogs/hpc/category/post-types/technical-how-to/) | [Permalink](https://aws.amazon.com/blogs/hpc/introducing-managed-accounting-for-aws-parallel-computing-service/) | [Share](https://aws.amazon.com/vi/blogs/hpc/introducing-managed-accounting-for-aws-parallel-computing-service/?fbclid=IwY2xjawNM0VpleHRuA2FlbQIxMABicmlkETFyQ01ESjRnbnpIU2RNWE5YAR4f-K9Oq4I7g2m7uxmLNKga5n8wdWk8TNtUjDNzteuPZ7RO-knTAHgx9EDW-A_aem_5AzfzcVcB_1yEvrtRQn-vA)
 
 _Bài viết này được đóng góp bởi Ramin Torabi và Tarun Mathur từ AWS, cùng với Nick Ihli từ SchedMD._
 

@@ -2,7 +2,7 @@
 
 ![AWS FCJ](https://github.com/vanhoangkha/AWS-First-Cloud-Journey/blob/master/Logo%20AWS%20FCJ.png?raw=true)
 
-**Internship period:** Sep 08 – Dec 28, 2025  
+**Internship period:** September – December, 2025  
 **Program:** AWS First Cloud Journey – OJT Fall 2025  
 **University:** FPT University  
 **Project:** Serverless Student Management System
@@ -28,19 +28,22 @@
 │
 ├──  static/images/           # Screenshots, diagrams, photos
 ├──  themes/                  # Hugo theme (hugo-theme-learn)
-├── config.toml                 # Hugo site configuration
-└── README.md
+
 ```
 
 ## Live Demo
 
-//url production
+🚀 Deployed via **GitHub Actions**:
+https://sharonng1029.github.io/fcj-fall2025-internship-report/
 
-## Certificates
+This repository is automatically deployed to GitHub Pages using GitHub Actions workflow.
 
-- AWS First Cloud Journey Completion Certificate
-- $2000+ AWS Credits earned
+---
+
+**© 2025 AWS First Cloud Journey – Fall 2025 Internship Report**
 
 Thanks AWS Vietnam, mentors & teammates for an amazing journey!
 
-Connect with me: [ngngan04](https://www.linkedin.com/in/ngngan04/)
+```
+
+```

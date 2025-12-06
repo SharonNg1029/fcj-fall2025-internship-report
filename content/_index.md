@@ -5,15 +5,13 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
-
-
 ### Student Information:
+
 &emsp; **Full Name:** Nguyen Nhat Kim Ngan
 
-&emsp; **Phone Number:** +84 333 982 942 
+&emsp; **Phone Number:** +84 333 982 942
 
 &emsp; **Email:** ngannnkse182088@fpt.edu.vn
 
@@ -23,9 +21,9 @@ chapter: false
 
 &emsp; **Class:** OJT202
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam LLC
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Internship Position:** FCJ Intern
+&emsp; **Internship Position:** FCJ Cloud Intern
 
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 

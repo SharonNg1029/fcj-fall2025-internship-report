@@ -431,19 +431,6 @@
                 href="http://localhost:1313/fcj-fall2025-internship-report/vi/5-workshop/5.6-cleanup/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fcj-fall2025-internship-report/vi/7-feedback/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/fcj-fall2025-internship-report/7-feedback/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/fcj-fall2025-internship-report/vi/7-feedback/"
-                />
-  </url><url>
     <loc>http://localhost:1313/fcj-fall2025-internship-report/vi/1-worklog/1.7-week7/</loc>
     <lastmod>2025-10-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -520,6 +507,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/fcj-fall2025-internship-report/vi/1-worklog/1.12-week12/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fcj-fall2025-internship-report/vi/1-worklog/1.13-week13/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/fcj-fall2025-internship-report/1-worklog/1.13-week13/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/fcj-fall2025-internship-report/vi/1-worklog/1.13-week13/"
                 />
   </url><url>
     <loc>http://localhost:1313/fcj-fall2025-internship-report/vi/categories/</loc>
