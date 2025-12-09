@@ -14,7 +14,7 @@ Trong suốt 3.5 tháng thực tập, mình đã đi qua các giai đoạn:
 - Tuần 5-6: Học Decoupling, Security nâng cao và khởi động ý tưởng dự án
 - Tuần 7-8: Chọn đề tài, thiết kế kiến trúc và ôn thi giữa kỳ (4 trụ cột: Security, Resilience, Performance, Cost Optimization)
 - Tuần 9-10: Phân tích nghiệp vụ, viết Proposal, thiết kế UI/UX
-- Tuần 11-13: Phát triển Frontend (React + TypeScript), tích hợp Cognito, API Gateway, AppSync Realtime Chat
+- Tuần 11-13: Phát triển Frontend (React + TypeScript), tích hợp Cognito, API Gateway, CloudFront + WAF, Route53
 
 Dưới đây là tóm tắt công việc từng tuần:
 
@@ -42,4 +42,4 @@ Dưới đây là tóm tắt công việc từng tuần:
 
 **Tuần 12:** [Hoàn thiện UI Admin Dashboard, Event Security](1.12-week12/)
 
-**Tuần 13:** [Tích hợp API Gateway, implement Realtime Chat với AppSync (GraphQL)](1.13-week13/)
+**Tuần 13:** [Tích hợp API Gateway, triển khai CloudFront + WAF, Route53 (Custom Domain)](1.13-week13/)

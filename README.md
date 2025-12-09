@@ -1,7 +1,7 @@
 ## AWS First Cloud Journey – Fall 2025 Internship Report
 
-![AWS FCJ](https://github.com/vanhoangkha/AWS-First-Cloud-Journey/blob/master/Logo%20AWS%20FCJ.png?raw=true)
-
+![AWS FCJ](https://media.licdn.com/dms/image/v2/D5616AQHPG1mNqqcDTA/profile-displaybackgroundimage-shrink_350_1400/B56ZknIC92JwAo-/0/1757298046892?e=1766620800&v=beta&t=o0cOTPL3L38QmKw1yxHK0xrPjVFD8BI3Bb_en-NQW5Y)
+s
 **Internship period:** September – December, 2025  
 **Program:** AWS First Cloud Journey – OJT Fall 2025  
 **University:** FPT University  
